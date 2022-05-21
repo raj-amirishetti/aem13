@@ -1,0 +1,18 @@
+<h1>Practice Model</h1>
+
+
+<p data-sly-test="${properties.firstName}">sightly property: ${properties.firstName}</p>
+<p data-sly-test="${properties.lastName}">sightly property: ${properties.lastName}</p>
+<p data-sly-test="${properties.email}">sightly property: ${properties.email}</p>
+
+
+
+<pre data-sly-use.refObject="com.aem.aemfeb.core.models.PracticeModel">
+
+${refObject.firstName}
+
+${refObject.lastName}
+
+${refObject.email}
+
+</pre>
