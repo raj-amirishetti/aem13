@@ -55,7 +55,7 @@ public class DbServlet extends SlingSafeMethodsServlet {
 		// resp.getWriter().write("Title = " +
 		// resource.adaptTo(ValueMap.class).get("jcr:title"));
 		con = helper.getDataBaseConnection("test");
-		resp.getWriter().write("Connection established " + con);
+		resp.getWriter().write("Connection Established " + con);
 
 	}
 }
