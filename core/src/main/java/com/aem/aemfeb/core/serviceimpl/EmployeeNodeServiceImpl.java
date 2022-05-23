@@ -113,7 +113,7 @@ public class EmployeeNodeServiceImpl implements EmployeeNodeService {
 			log.error("Exception "+e.getMessage());
 			
 		}
-		log.info("getsubservice method ended");
+		log.info("getSubService method ended");
 		
 		log.info(serviceMap.toString());
 		
