@@ -1,6 +1,10 @@
-<h2>This is my first Sample component</h2>
+<h2>This is my first Sample component </h2>
+<h4>practicing cq:dialog with various input fields </h4>
 
 
 
-
-    
+<p data-sly-test="${properties.firstName}">First Name: ${properties.firstName}</p>
+<p data-sly-test="${properties.lastName}">Last Name: ${properties.lastName}</p>
+<p data-sly-test="${properties.dob}">DOB : ${'MMM dd,yyyy' @ format=properties.dob}</p>
+<p data-sly-test="${properties.weight}">weight : ${properties.weight}</p>
+<p data-sly-test="${properties.url}">url : ${properties.url}</p>

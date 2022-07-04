@@ -1,7 +1,9 @@
 package com.aem.aemfeb.core.serviceimpl;
 
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 import javax.jcr.Node;
 import javax.jcr.Session;
@@ -35,14 +37,22 @@ public class EmployeeNodeServiceImpl implements EmployeeNodeService {
 		try {
 
 			log.info("***************registerEmployeeDetails method started******************");
+			
+			 /* This map will be used to get session via getServiceResourceResolver() method
+			 */
+			 
+			Map<String, Object> params = new HashMap<>();
+			
+			/**
+			 * Adding the subservice name in the param map
+			 */
+			params.put(ResourceResolverFactory.SUBSERVICE, "testUser");
 
-			resourceResolver = resolverFactory.getResourceResolver(getSubService());
+			resourceResolver = resolverFactory.getResourceResolver(params);
 
-			log.info("rr " + resourceResolver);
+			resource = resourceResolver.getResource("/content/firstpage/jcr:content/employees");
 
-			resource = resourceResolver.getResource("/content/firstpage/jcr:content/employee");
-
-			log.info("resource " + resource);
+			log.info("Resource "+resource);
 
 			session = resourceResolver.adaptTo(Session.class);
 
@@ -50,17 +60,18 @@ public class EmployeeNodeServiceImpl implements EmployeeNodeService {
 
 			// Create random numbers
 
-			java.util.Random r = new java.util.Random();
+			Random r = new Random();
 
 			int low = 10;
 			int high = 1000;
 			int result = r.nextInt(high - low) + low;
-			String randomValue = "employee" + result;
+			String randomValue = "employees" + result;
 
 			log.info("Random value " + randomValue);
 
 			Node node = resource.adaptTo(Node.class);
-
+			
+			
 			if (node != null) {
 
 				log.info("inside if condition");
@@ -89,14 +100,7 @@ public class EmployeeNodeServiceImpl implements EmployeeNodeService {
 		return flag;
 	}
 
-	@Override
-	public boolean loginEmployee(String userName, String password) {
-
-		return false;
-	}
-
-	@Override
-	public Map<String, Object>getSubService() {
+/*	private Map<String, Object> getSubService() {
 		log.info("inside getSubService method");
 		Map<String, Object> serviceMap = null;
 		try {
@@ -115,5 +119,10 @@ public class EmployeeNodeServiceImpl implements EmployeeNodeService {
 		log.info(serviceMap.toString());
 
 		return serviceMap;
-	}
+		
+	}*/
+
+	
+
+	
 }

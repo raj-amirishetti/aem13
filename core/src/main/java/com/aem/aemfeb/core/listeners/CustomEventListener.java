@@ -11,6 +11,7 @@ import javax.jcr.observation.EventListener;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.jcr.api.SlingRepository;
+
 import org.osgi.service.component.ComponentContext;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
@@ -71,6 +72,9 @@ public class CustomEventListener implements EventListener {
 			 */
 			resolver = resolverFactory.getServiceResourceResolver(params);
 			
+			//Resource resource = resolver.getResource("/content/firstpage/jcr:content/raj");
+			
+			//log.info("resource "+resource);
 			/**
 			 * Adapting the resource resolver to session object
 			 */
@@ -82,7 +86,9 @@ public class CustomEventListener implements EventListener {
 			 * Adding the event listener
 			 */
 			session.getWorkspace().getObservationManager().addEventListener(this,
-					Event.PROPERTY_ADDED | Event.NODE_ADDED, "/content/firstpage/jcr:content", true, null, null, false);			
+					Event.PROPERTY_ADDED | Event.NODE_ADDED, "/content/firstpage/jcr:content", true, null, null, false);	
+			
+			
 			
 		} catch (Exception e) {
 			

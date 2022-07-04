@@ -1,20 +1,30 @@
 
 package com.aem.aemfeb.core.models;
 
-import javax.annotation.PostConstruct;
 import javax.inject.Inject;
-import org.apache.sling.api.resource.Resource;
+import javax.inject.Named;
+
+import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.Via;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
-@Model(adaptables = Resource.class)
+@Model(adaptables = SlingHttpServletRequest.class)
 public class MyModel {
 
-	@Inject @Default(values ="Enter your text")
-	private String text;
+	@ValueMapValue @Named("text") @Default(values ="Enter your text") 
+	private String title;
+	
+	@ValueMapValue  @Default(values ="Enter your Name") 
+	private String name;
 
-	@PostConstruct
-	public String getText() {
-		return text;
+
+	public String getTitle() {
+		return title;
+	}
+	
+	public String getName() {
+		return name;
 	}
 }

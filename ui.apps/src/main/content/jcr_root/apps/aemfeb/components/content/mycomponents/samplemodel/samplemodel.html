@@ -1,12 +1,14 @@
 <h1>Sample Model</h1>
 
 
-<p data-sly-test="${properties.text}">sightly property: ${properties.text}</p>
+<p>sightly property: ${properties.text}</p>
 
 
-<pre data-sly-use.refObject="com.aem.aemfeb.core.models.MyModel">
+<pre data-sly-use.xyz="com.aem.aemfeb.core.models.MyModel">
 
-${refObject.text}
+<p>${xyz.title}</p>
+
+<p>${xyz.name}</p>
 
 </pre>
 

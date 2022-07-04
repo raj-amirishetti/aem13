@@ -1,13 +1,14 @@
-<h1>Practice Model</h1>
+<h1>Practice component</h1>
 
 
-<p data-sly-test="${properties.firstName}">sightly property: ${properties.firstName}</p>
-<p data-sly-test="${properties.lastName}">sightly property: ${properties.lastName}</p>
-<p data-sly-test="${properties.email}">sightly property: ${properties.email}</p>
+<p data-sly-test="${properties.firstName}">First Name from sightly : ${properties.firstName}</p>
+<p data-sly-test="${properties.lastName}">Last Name from sightly: ${properties.lastName}</p>
+<p data-sly-test="${properties.email}">Email from sightly: ${properties.email}</p>
 
 
 
 <pre data-sly-use.refObject="com.aem.aemfeb.core.models.PracticeModel">
+From Sling Model
 
 ${refObject.firstName}
 
