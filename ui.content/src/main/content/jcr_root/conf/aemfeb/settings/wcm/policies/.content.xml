@@ -8,10 +8,12 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <content-default
                         jcr:description="Policy for editable layout containers"
+                        jcr:lastModified="{Date}2022-08-23T21:11:46.672+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="aemfeb Default"
+                        jcr:title="Test Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[group:aemfeb,/apps/aemfeb/components/form/container]"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,group:aemfeb,/apps/weretail/components/content/contentfragment,/apps/weretail/components/content/title]"
                         policyResourceType="wcm/foundation/components/responsivegrid">
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -28,7 +30,51 @@
                             jcr:primaryType="nt:unstructured"
                             mergeList="{Boolean}true"/>
                     </content-default>
+                    <policy_921377675067600
+                        jcr:description="Practicing Purpose"
+                        jcr:lastModified="{Date}2022-06-15T23:27:59.401+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Right Section Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:aemfeb]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_921377675067600>
+                    <policy_1654440075872
+                        jcr:description="Policy for editable layout containers"
+                        jcr:lastModified="{Date}2022-08-23T21:11:03.877+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="practice policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/aemfeb/components/content/helloworld,/apps/aemfeb/components/content/mycomponents/learning,/apps/aemfeb/components/content/mycomponents/multifieldcomponent,/apps/aemfeb/components/content/mycomponents/mycontentfragment,/apps/aemfeb/components/content/mycomponents/noderegister,/apps/aemfeb/components/content/mycomponents/practicecomponent,/apps/aemfeb/components/content/mycomponents/samplecomponent,/apps/aemfeb/components/content/mycomponents/samplemodel,/apps/aemfeb/components/content/mycomponents/signup,/apps/aemfeb/components/content/mycomponents/taskcomponent,/apps/aemfeb/components/content/mycomponents/test-clientlib,/apps/aemfeb/components/content/mycomponents/test-multi,/apps/aemfeb/components/content/text,/apps/aemfeb/components/content/title,/apps/aemfeb/components/content/mycomponents/translate-test,/apps/weretail/components/content/contentfragment,/apps/weretail/components/content/title]"
+                        policyResourceType="wcm/foundation/components/responsivegrid">
+                        <cq:authoring jcr:primaryType="nt:unstructured">
+                            <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                                <image
+                                    jcr:primaryType="nt:unstructured"
+                                    assetGroup="media"
+                                    assetMimetype="image/*"
+                                    droptarget="image"
+                                    resourceType="aemfeb/components/content/image"
+                                    type="Images"/>
+                            </assetToComponentMapping>
+                        </cq:authoring>
+                        <jcr:content
+                            jcr:primaryType="nt:unstructured"
+                            mergeList="{Boolean}true"/>
+                    </policy_1654440075872>
+                    <policy_1654535868965
+                        jcr:lastModified="{Date}2022-06-15T23:27:28.918+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="new "
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/dam/cfm/components/contentfragment,/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/text,/libs/foundation/components/title,/apps/aemfeb/components/content/mycomponents/learning,/apps/aemfeb/components/content/mycomponents/multifieldcomponent,/apps/aemfeb/components/content/mycomponents/mycontentfragment,/apps/aemfeb/components/content/mycomponents/noderegister,/apps/aemfeb/components/content/mycomponents/practicecomponent,/apps/aemfeb/components/content/mycomponents/samplecomponent,/apps/aemfeb/components/content/mycomponents/samplemodel,/apps/aemfeb/components/content/mycomponents/signup,/apps/aemfeb/components/content/mycomponents/taskcomponent,/apps/aemfeb/components/content/mycomponents/test-clientlib,/apps/aemfeb/components/content/mycomponents/test-multi,/apps/aemfeb/components/content/mycomponents/translate-test]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1654535868965>
                 </responsivegrid>
+                <title jcr:primaryType="nt:unstructured"/>
             </components>
         </foundation>
     </wcm>
@@ -45,6 +91,42 @@
                     </form-container>
                 </container>
             </form>
+            <structure jcr:primaryType="nt:unstructured">
+                <page jcr:primaryType="nt:unstructured">
+                    <policy_1653640786217
+                        jcr:description="Test Policy for Page"
+                        jcr:lastModified="{Date}2022-05-27T14:10:19.793+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Test Page Policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1653640786217>
+                </page>
+            </structure>
+            <content jcr:primaryType="nt:unstructured">
+                <search jcr:primaryType="nt:unstructured"/>
+                <title jcr:primaryType="nt:unstructured"/>
+                <mycomponents jcr:primaryType="nt:unstructured">
+                    <mycontentfragment jcr:primaryType="nt:unstructured"/>
+                </mycomponents>
+            </content>
         </components>
     </aemfeb>
+    <weretail jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <content jcr:primaryType="nt:unstructured">
+                <contentfragment jcr:primaryType="nt:unstructured"/>
+                <title jcr:primaryType="nt:unstructured"/>
+            </content>
+            <structure jcr:primaryType="nt:unstructured">
+                <page jcr:primaryType="nt:unstructured"/>
+            </structure>
+        </components>
+    </weretail>
+    <foundation jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <title jcr:primaryType="nt:unstructured"/>
+        </components>
+    </foundation>
 </jcr:root>

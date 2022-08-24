@@ -3,6 +3,8 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2022-05-27T14:55:20.710+05:30"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/aemfeb/settings/wcm/templates/content-page"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="aemfeb/components/structure/page">
@@ -29,7 +31,12 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid"
                 editable="{Boolean}true">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        behavior="newline"
+                        width="7"/>
+                </cq:responsive>
             </responsivegrid>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">

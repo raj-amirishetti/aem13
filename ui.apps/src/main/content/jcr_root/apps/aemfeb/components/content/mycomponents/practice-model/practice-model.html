@@ -1,16 +1,5 @@
 <h1>Practice Model</h1>
 
-
-<div>From properties object</div>
-
-<div>First Name is : ${properties.fname}</div>
-<div>Last Name is : ${properties.lname}</div>
-<div>Email id is : ${properties.email}</div>
-
-<div>From sling model </div>
-
-
-
 <pre data-sly-use.refObject="com.aem.aemfeb.core.models.TestModel">
 
 ${refObject.fname}
@@ -18,9 +7,12 @@ ${refObject.fname}
 ${refObject.lname}
 
 ${refObject.email}
+
+${refObject.title}
+
+${refObject.nodePath}
+
 </pre>
-
-
 
 
 

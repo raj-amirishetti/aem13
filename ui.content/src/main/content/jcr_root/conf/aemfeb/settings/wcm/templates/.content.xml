@@ -3,4 +3,8 @@
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
     <content-page/>
+    <first-editable-template/>
+    <practice-editable-template/>
+    <test-editable-template/>
+    <test-edit-temp/>
 </jcr:root>

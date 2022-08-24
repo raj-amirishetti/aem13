@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Template"
+    allowedPaths="[/content/entities(/.*)?]"
+    ranking="{Long}100">
+    <jcr:content
+        cq:lastModified="{Date}2022-06-19T22:59:38.486+05:30"
+        cq:lastModifiedBy="admin"
+        cq:scaffolding="/conf/aemfeb/settings/dam/cfm/models/movies/jcr:content/model"
+        cq:templateType="/libs/settings/dam/cfm/model-types/fragment"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Movies"
+        sling:resourceSuperType="dam/cfm/models/console/components/data/entity"
+        sling:resourceType="dam/cfm/models/console/components/data/entity/default">
+        <model
+            cq:targetPath="/content/entities"
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="wcm/scaffolding/components/scaffolding"
+            dataTypesConfig="/mnt/overlay/settings/dam/cfm/models/formbuilderconfig/datatypes"
+            maxGeneratedOrder="20">
+            <cq:dialog
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/authoring/dialog">
+                <items jcr:primaryType="nt:unstructured">
+                    <_x0031_655658483967
+                        jcr:primaryType="nt:unstructured"
+                        checked="true"/>
+                </items>
+                <content
+                    jcr:lastModified="{Date}2022-06-19T22:59:38.486+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        maxGeneratedOrder="21">
+                        <_x0031_655658136997
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Enter movie name"
+                            fieldLabel="Movie Title"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="movieTitle"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string"/>
+                        <_x0031_655658797931
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Enter movie director name"
+                            fieldLabel="Director Name"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="dirName"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string"/>
+                        <_x0031_655658435041
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            emptyText="Enter Movie Casting"
+                            fieldLabel="Movie Casting"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="movieCast"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string[]">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Enter Movie Casting"
+                                maxlength="255"
+                                name="movieCast"
+                                renderReadOnly="false"/>
+                        </_x0031_655658435041>
+                        <_x0031_655658831218
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Enter Producer name"
+                            fieldLabel="Producer Name"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="prodName"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string"/>
+                        <_x0031_655658483967
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            listOrder="4"
+                            metaType="boolean"
+                            name="released"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            text="Released or not"
+                            valueType="boolean"/>
+                        <_x0031_655659755582
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
+                            cfm-element="Movie Review"
+                            listOrder="21"
+                            metaType="text-multi"
+                            name="movieReview"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string"/>
+                        <_x0031_655658573890
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            displayedFormat="YYYY-MM-DD HH:mm"
+                            emptyText="YYYY-MM-DD HH:mm"
+                            fieldLabel="Released Date"
+                            listOrder="5"
+                            metaType="date"
+                            name="relDate"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueFormat="YYYY-MM-DD[T]HH:mm:ss.000Z"
+                            valueType="calendar">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                typeHint="Date"/>
+                        </_x0031_655658573890>
+                    </items>
+                </content>
+            </cq:dialog>
+        </model>
+    </jcr:content>
+</jcr:root>

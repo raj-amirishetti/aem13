@@ -1,22 +1,41 @@
 
 package com.aem.aemfeb.core.models;
 
-import javax.inject.Inject;
-import org.apache.sling.api.resource.Resource;
-import org.apache.sling.models.annotations.Default;
-import org.apache.sling.models.annotations.Model;
+import javax.jcr.Node;
+import javax.jcr.RepositoryException;
 
-@Model(adaptables = Resource.class)
+import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.Self;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+
+@Model(adaptables = SlingHttpServletRequest.class,
+		defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL )
 public class TestModel {
 
-	@Inject @Default(values ="Enter your First Name")
+	@ValueMapValue 
 	private String fname;
 	
-	@Inject @Default(values ="Enter your Last Name")
+	@ValueMapValue 
 	private String lname;
 	
-	@Inject @Default(values ="Enter your Email")
+	@ValueMapValue 
 	private String email;
+	
+
+
+	   @Self
+	   Node node;
+
+	    public String getNodePath() throws RepositoryException
+	   {
+
+	       return node.getPath();
+
+	   }
+
+	
 
 	
 	public String getFname() {

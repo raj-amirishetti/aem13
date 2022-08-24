@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="8b504378-f588-48e0-a9af-3170a58655c4">
+    <jcr:content
+        cq:name="movie-fragment"
+        cq:parentPath="/content/dam/aemfeb/content-fragments/en"
+        jcr:description=""
+        jcr:lastModified="{Date}2022-06-19T23:00:33.872+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="movie-fragment"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-06-19T23:00:33.872+05:30">
+        <data
+            cq:model="/conf/aemfeb/settings/dam/cfm/models/movies"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:primaryType="nt:unstructured"
+                dirName="Sukumar"
+                dirName_x0040_LastModified="{Date}2022-06-19T23:00:33.817+05:30"
+                movieCast="[Allu Arjun,Fahad,Rashmika,Sunil,Samantha]"
+                movieCast_x0040_LastModified="{Date}2022-06-19T23:00:33.817+05:30"
+                movieReview="&lt;ol>&#xa;&lt;li>&lt;b>A labourer named Pushpa makes enemies as he rises in the world of red sandalwood smuggling. However, violence erupts when the police attempt to bring down his illegal business.&lt;/b>&lt;/li>&#xa;&lt;/ol>&#xa;"
+                movieReview_x0040_ContentType="text/html"
+                movieReview_x0040_LastModified="{Date}2022-06-19T23:00:33.818+05:30"
+                movieTitle="Pushpa"
+                movieTitle_x0040_LastModified="{Date}2022-06-19T23:00:33.817+05:30"
+                prodName="AA"
+                prodName_x0040_LastModified="{Date}2022-06-19T23:00:33.818+05:30"
+                relDate="{Date}2022-02-03T00:00:00.000+05:30"
+                relDate_x0040_LastModified="{Date}2022-06-19T23:00:33.819+05:30"
+                released="{Boolean}true"
+                released_x0040_LastModified="{Date}2022-06-19T23:00:33.818+05:30"/>
+            <var1
+                jcr:primaryType="nt:unstructured"
+                dirName="Sukumar"
+                dirName_x0040_LastModified="{Date}2022-06-19T22:55:41.341+05:30"
+                movieCast="[Allu Arjun,Fahad,Rashmika]"
+                movieCast_x0040_LastModified="{Date}2022-06-19T22:55:41.341+05:30"
+                movieTitle="Pushpa"
+                movieTitle_x0040_LastModified="{Date}2022-06-19T22:55:41.341+05:30"
+                prodName="AA"
+                prodName_x0040_LastModified="{Date}2022-06-19T22:55:41.342+05:30"
+                relDate="{Date}2022-02-03T00:00:00.000+05:30"
+                relDate_x0040_LastModified="{Date}2022-06-19T22:55:41.342+05:30"
+                released="{Boolean}true"
+                released_x0040_LastModified="{Date}2022-06-19T22:55:41.342+05:30"/>
+            <var2
+                jcr:primaryType="nt:unstructured"
+                dirName="Sukumar"
+                dirName_x0040_LastModified="{Date}2022-06-19T22:56:06.793+05:30"
+                movieCast="[Allu Arjun,Fahad,Rashmika,Sunil,Samantha]"
+                movieCast_x0040_LastModified="{Date}2022-06-19T22:56:06.794+05:30"
+                movieTitle="Pushpa2"
+                movieTitle_x0040_LastModified="{Date}2022-06-19T22:56:06.793+05:30"
+                prodName="AA"
+                prodName_x0040_LastModified="{Date}2022-06-19T22:56:06.794+05:30"
+                relDate="{Date}2022-02-03T00:00:00.000+05:30"
+                relDate_x0040_LastModified="{Date}2022-06-19T22:56:06.795+05:30"
+                released="{Boolean}true"
+                released_x0040_LastModified="{Date}2022-06-19T22:56:06.795+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <var1
+                    jcr:description=""
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="var1"
+                    name="var1">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[movieTitle:06846e46-c07a-425b-b435-53e18d6c1a93,dirName:06846e46-c07a-425b-b435-53e18d6c1a93,movieCast:06846e46-c07a-425b-b435-53e18d6c1a93,prodName:06846e46-c07a-425b-b435-53e18d6c1a93,released:06846e46-c07a-425b-b435-53e18d6c1a93,relDate:06846e46-c07a-425b-b435-53e18d6c1a93]"/>
+                </var1>
+                <var2
+                    jcr:description=""
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="var2"
+                    name="var2">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[movieTitle:05ee61f2-b4d4-48d6-ab36-c3dadfc2050e,dirName:05ee61f2-b4d4-48d6-ab36-c3dadfc2050e,movieCast:05ee61f2-b4d4-48d6-ab36-c3dadfc2050e,prodName:05ee61f2-b4d4-48d6-ab36-c3dadfc2050e,released:05ee61f2-b4d4-48d6-ab36-c3dadfc2050e,relDate:05ee61f2-b4d4-48d6-ab36-c3dadfc2050e]"/>
+                </var2>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

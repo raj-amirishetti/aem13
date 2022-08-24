@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-05-30T10:35:00.605+05:30"
+        cq:lastModifiedBy="translation-job-service"
+        cq:lastTranslationDone="{Date}2022-05-30T10:35:00.605+05:30"
+        cq:lastTranslationUpdate="{Date}2022-05-29T22:50:16.708+05:30"
+        cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
+        cq:translationMethod="MACHINE_TRANSLATION"
+        cq:translationProviderCloudConfig="/libs/settings/cloudconfigs/translation/msft-translation/msft_trial"
+        cq:translationProviderName="microsoft"
+        cq:translationSourcePath="/content/aemfeb/language-masters/en/about-us"
+        cq:translationStatus="COMPLETE"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="About Us"
+        sling:resourceType="weretail/components/structure/page">
+        <root
+            jcr:lastModified="{Date}2022-05-27T15:22:36.147+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2022-05-27T15:22:42.081+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-05-27T15:26:20.239+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_2026437577
+                jcr:created="{Date}2022-05-27T15:22:58.906+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-05-27T15:26:32.398+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_737481889
+                jcr:created="{Date}2022-05-28T09:59:12.673+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-05-28T10:09:37.993+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+        </root>
+    </jcr:content>
+</jcr:root>
