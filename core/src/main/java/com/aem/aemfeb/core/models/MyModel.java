@@ -16,7 +16,7 @@ public class MyModel {
 	@ValueMapValue @Named("text") @Default(values ="Enter your text") 
 	private String title;
 	
-	@ValueMapValue  @Default(values ="Enter your Name") 
+	@ValueMapValue  @Default(values ="Enter your name") 
 	private String name;
 
 
