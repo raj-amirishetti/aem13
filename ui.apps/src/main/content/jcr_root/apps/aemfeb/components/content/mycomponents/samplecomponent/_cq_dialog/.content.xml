@@ -59,6 +59,23 @@
                         max="120"
                         min="40"
                         name="./weight"/>
+                    <well
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well"
+                        fieldLabel="Technologies known">
+                        <items jcr:primaryType="nt:unstructured">
+                            <tech
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}false"
+                                fieldLabel="Technologies">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    name="./tech"/>
+                            </tech>
+                        </items>
+                    </well>
                 </items>
             </column>
         </items>

@@ -20,7 +20,7 @@ import java.io.IOException;
 @Component(service = Servlet.class, property = { Constants.SERVICE_DESCRIPTION + "=Employee NodeRegister Servlet",
 													  "sling.servlet.methods=" + HttpConstants.METHOD_POST, 
 													  "sling.servlet.paths=" + "/bin/nodeservlet" })
-public class NodeRegisterServlet extends SlingAllMethodsServlet {
+public class NodeRegisterServlet extends SlingSafeMethodsServlet {
 
 	
 	private static final long serialVersionUID = 1L;
@@ -32,7 +32,7 @@ public class NodeRegisterServlet extends SlingAllMethodsServlet {
 	EmployeeNodeService emp;
 	
 	@Override
-	protected void doPost(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
+	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
 
 		String firstName = req.getParameter("firstName");

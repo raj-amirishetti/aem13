@@ -6,5 +6,10 @@
 <p data-sly-test="${properties.firstName}">First Name: ${properties.firstName}</p>
 <p data-sly-test="${properties.lastName}">Last Name: ${properties.lastName}</p>
 <p data-sly-test="${properties.dob}">DOB : ${'MMM dd,yyyy' @ format=properties.dob}</p>
-<p data-sly-test="${properties.weight}">weight : ${properties.weight}</p>
-<p data-sly-test="${properties.url}">url : ${properties.url}</p>
+
+<p data-sly-test="${properties.gender}">GENDER : ${properties.gender}</p>
+<p data-sly-test="${properties.weight}">WEIGHT : ${properties.weight}</p>
+<p data-sly-test="${properties.url}">URL : ${properties.url}</p>
+<p data-sly-test="${properties.tech}">LANGUAGES KNOWN : ${properties.tech}</p>
+
+<p data-sly-list.item="${properties.tech}"> <p> Technology  : ${itemList.count}: <b>${item} </b></p> </p>

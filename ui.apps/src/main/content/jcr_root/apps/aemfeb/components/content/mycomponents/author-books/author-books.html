@@ -1,11 +1,25 @@
 <div data-sly-use.books="com.aem.aemfeb.core.models.AuthorBooksImpl">
     <h1>${books.authorName} Books</h1>
+
+
+
     ===================Multifield with single field=============
-    <div data-sly-list.item="${books.authorBooks}">
-         ---------------Book : ${itemList.count}--------------
-        <p> Book : <b>${item} </b></p>
-    </div>
-    <p> ALL Book : <b>${books.authorBooks @ join=', '}</b></p>
+
+		<div data-sly-list.item="${books.authorBooks}">
+
+        <p data-sly-test= ${itemList.even}>---------------Count : ${itemList.count} ------Index --${itemList.index}--------------
+        				Book : <b>${item} </b></p>
+   		 </div>
+
+
+  <!-- /* <p> ALL Book : <b>${books.authorBooks @ join=', '}</b></p> */-->
+
+
+
+    
+
+
+
 
 
        ========================== USING MAP ================================

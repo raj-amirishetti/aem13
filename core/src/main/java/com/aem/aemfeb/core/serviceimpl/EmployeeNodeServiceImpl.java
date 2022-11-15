@@ -46,17 +46,20 @@ public class EmployeeNodeServiceImpl implements EmployeeNodeService {
 			/**
 			 * Adding the subservice name in the param map
 			 */
-			params.put(ResourceResolverFactory.SUBSERVICE, "testUser");
+			params.put(ResourceResolverFactory.SUBSERVICE, "testSystemUser");
+			
+			
+			
 
-			resourceResolver = resolverFactory.getResourceResolver(params);
+			resourceResolver = resolverFactory.getServiceResourceResolver(params);
+			
 
-			resource = resourceResolver.getResource("/content/firstpage/jcr:content/employees");
+			resource = resourceResolver.getResource("/content/practice-page/jcr:content/parcontent/noderegister");
 
 			log.info("Resource "+resource);
 
 			session = resourceResolver.adaptTo(Session.class);
 
-			log.info("session***" + session);
 
 			// Create random numbers
 
@@ -100,27 +103,6 @@ public class EmployeeNodeServiceImpl implements EmployeeNodeService {
 		return flag;
 	}
 
-/*	private Map<String, Object> getSubService() {
-		log.info("inside getSubService method");
-		Map<String, Object> serviceMap = null;
-		try {
-
-			serviceMap = new HashMap<String, Object>();
-
-			serviceMap.put(ResourceResolverFactory.SUBSERVICE, "testUser");
-
-		} catch (Exception e) {
-
-			log.error("Exception " + e.getMessage());
-
-		}
-		log.info("getSubService method ended");
-
-		log.info(serviceMap.toString());
-
-		return serviceMap;
-		
-	}*/
 
 	
 

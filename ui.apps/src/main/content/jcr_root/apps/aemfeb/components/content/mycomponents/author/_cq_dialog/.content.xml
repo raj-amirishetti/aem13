@@ -16,6 +16,7 @@
                     <fname
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Enter the First Name"
                         fieldLabel="First Name"
                         name="./fname"
                         validation="geeks-firstname-validation"/>
