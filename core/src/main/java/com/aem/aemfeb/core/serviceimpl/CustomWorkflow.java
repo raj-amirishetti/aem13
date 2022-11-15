@@ -58,9 +58,7 @@ public class CustomWorkflow implements WorkflowProcess{
 			
 			
 			
-			node.addNode("addingNode").setPrimaryType("cq:PageContent");
-			
-			
+			node.addNode("addingNode").setPrimaryType("cq:PageContent");	
 			
 			
 			node.setProperty("city", "Hyderabad");
