@@ -14,7 +14,7 @@ public class MultifieldHelper {
 	private int copies;
 
 	private String bookSubject;
-	private List<NestedHelper> bookEditons;
+	private List<NestedHelper> bookEditions;
 
 	private static final Logger LOG = LoggerFactory.getLogger(MultifieldHelper.class);
 
@@ -59,11 +59,12 @@ public class MultifieldHelper {
 		return bookSubject;
 	}
 
-	public List<NestedHelper> getBookEditons() {
-		return bookEditons;
+	public List<NestedHelper> getBookEditions() {
+		return bookEditions;
+		
 	}
 
-	public void setBookEditons(List<NestedHelper> bookEditons) {
-		this.bookEditons = bookEditons;
+	public void setBookEditions(List<NestedHelper> bookEditions) {
+		this.bookEditions = bookEditions;
 	}
 }

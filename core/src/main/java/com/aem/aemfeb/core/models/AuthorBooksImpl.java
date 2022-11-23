@@ -95,11 +95,11 @@ public class AuthorBooksImpl {
 	                    MultifieldHelper multifieldHelper=new MultifieldHelper(bookNested);
 	                    if(bookNested.hasChildren()){
 	                        List<NestedHelper> bookNestedList=new ArrayList<>();
-	                        Resource nestedResource=bookNested.getChild("bookeditons");
+	                        Resource nestedResource=bookNested.getChild("bookeditions");
 	                        for(Resource nested : nestedResource.getChildren()){
 	                            bookNestedList.add(new NestedHelper(nested));
 	                        }
-	                        multifieldHelper.setBookEditons(bookNestedList);
+	                        multifieldHelper.setBookEditions(bookNestedList);
 	                    }
 	                    bookDetailsNested.add(multifieldHelper);
 	                }

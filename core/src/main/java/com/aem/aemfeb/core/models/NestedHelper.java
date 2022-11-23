@@ -7,23 +7,23 @@ import org.apache.sling.api.resource.Resource;
 public class NestedHelper {
 
 	
-	private int bookEditon;
-    private Date editonDate;
+	private int bookEdition;
+    private Date editionDate;
     public NestedHelper(Resource resource){
-        if(resource.getValueMap().get("bookediton", Integer.class)!=null) {
-            this.bookEditon = resource.getValueMap().get("bookediton", Integer.class);
+        if(resource.getValueMap().get("bookedition", Integer.class)!=null) {
+            this.bookEdition = resource.getValueMap().get("bookedition", Integer.class);
         }
-        if(resource.getValueMap().get("editondate",Date.class)!=null){
-            this.editonDate=resource.getValueMap().get("editondate",Date.class);
+        if(resource.getValueMap().get("editiondate", Date.class)!=null){
+            this.editionDate=resource.getValueMap().get("editiondate", Date.class);
         }
 
     }
 
-    public int getBookEditon() {
-        return bookEditon;
+    public int getBookEdition() {
+        return bookEdition;
     }
 
-    public Date getEditonDate() {
-        return editonDate;
+    public Date getEditionDate() {
+        return editionDate;
     }
 }
