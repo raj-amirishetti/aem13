@@ -1,8 +1,5 @@
 package com.aem.aemfeb.core.serviceimpl;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import javax.jcr.ItemExistsException;
 import javax.jcr.LoginException;
 import javax.jcr.Node;
@@ -45,12 +42,17 @@ public class CustomWorkflow implements WorkflowProcess{
 		  
 		String payload =   wdata.getPayload().toString()+"/jcr:content";
 		
+		
+		ResourceResolver resolver= workflowSession.adaptTo(ResourceResolver.class);
+		
+				
+		
 
-		Map<String, Object> map = new HashMap<String, Object>();
-		map.put(ResourceResolverFactory.SUBSERVICE, "testSystemUser");
+		/* Map<String, Object> map = new HashMap<String, Object>();
+		map.put(ResourceResolverFactory.SUBSERVICE, "testSystemUser");  */
 
 		try {
-			ResourceResolver resolver = factory.getServiceResourceResolver(map);
+			//ResourceResolver resolver = factory.getServiceResourceResolver(map);
 
 			Resource resource = resolver.getResource(payload);
 
@@ -81,9 +83,6 @@ public class CustomWorkflow implements WorkflowProcess{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (RepositoryException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (org.apache.sling.api.resource.LoginException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
