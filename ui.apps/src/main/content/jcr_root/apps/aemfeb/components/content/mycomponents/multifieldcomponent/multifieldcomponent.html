@@ -1,1 +1,13 @@
-<h1>Multifield Component</h1>
+<div data-sly-use.wcm="com.aem.aemfeb.core.serviceimpl.SampleWcmUsePojo">
+
+
+ <div data-sly-list.item="${wcm.links}">
+        -----------------------------
+        <p>  <b>Title : ${item}</b></p>
+        <p>  <b>Link : ${wcm.links[item]}</b> </p>
+    </div>
+
+
+
+
+</div>

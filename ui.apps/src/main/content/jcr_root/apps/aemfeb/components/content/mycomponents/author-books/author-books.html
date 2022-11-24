@@ -7,8 +7,7 @@
 
 		<div data-sly-list.item="${books.authorBooks}">
 
-        <p data-sly-test= ${itemList.even}>---------------Count : ${itemList.count} ------Index --${itemList.index}--------------
-        				Book : <b>${item} </b></p>
+        <p>Book${itemList.count} : <b>${item} </b></p>
    		 </div>
 
 
@@ -29,9 +28,31 @@
         <p> Subject : <b>${item.booksubject}</b> </p>
         <p> Publish : <b>${item.publishyear}</b> </p>
     </div>
-    
 
-   
+
+     ========================== USING BEAN ================================
+    <div data-sly-list.item="${books.bookDetailsWithBean}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookName} </b></p>
+        <p> Date : <b>${'MMM dd,yyyy' @ format=item.publishDate}</b> </p>
+        <p> Copies : <b>${item.copies}</b> </p>
+    </div>
+
+
+    ================== USING NESTED MULTIFIELD ====================
+    <div data-sly-list="${books.bookDetailsWithNestedMultifield}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookName} </b></p>
+        <p> Subject : <b>${item.bookSubject} </b></p>
+					<p>-----------BOOK EDITIONS---------------- </p>
+        <div data-sly-list.edition="${item.bookEditions}">
+				EDITION:::::${editionList.count}
+            <p> Book Edition : <b>${edition.bookEdition} </b></p>
+            <p>  Published Date : <b>${'MMM dd,yyyy' @ format=edition.editionDate}</b> </p>
+        </div>
+    </div>
+
+
 </div>
 
 

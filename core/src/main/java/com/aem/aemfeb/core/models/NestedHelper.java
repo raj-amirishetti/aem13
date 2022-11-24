@@ -9,6 +9,9 @@ public class NestedHelper {
 	
 	private int bookEdition;
     private Date editionDate;
+    
+    
+    
     public NestedHelper(Resource resource){
         if(resource.getValueMap().get("bookedition", Integer.class)!=null) {
             this.bookEdition = resource.getValueMap().get("bookedition", Integer.class);

@@ -48,27 +48,19 @@
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/container">
                                                     <items jcr:primaryType="nt:unstructured">
-                                                        <title
+                                                        <linktitle
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/foundation/form/textfield"
                                                             fieldDescription="Enter User Submenu title"
-                                                            fieldLabel="User"
-                                                            name="./user"/>
-                                                        <link
+                                                            fieldLabel="Title"
+                                                            name="./linktitle"/>
+                                                        <linkpath
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
                                                             fieldDescription="Enter User Submenu Link"
-                                                            fieldLabel="UserLink"
-                                                            name="./link"
+                                                            fieldLabel="Link"
+                                                            name="./linkpath"
                                                             rootPath="/content"/>
-                                                        <flag
-                                                            jcr:primaryType="nt:unstructured"
-                                                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                                                            checked="{Boolean}false"
-                                                            fieldDescription="Testing Flag for checkbox"
-                                                            name="./flag"
-                                                            text="True or False"
-                                                            title="Checkbox Tooltip"/>
                                                     </items>
                                                 </column>
                                             </items>
@@ -80,75 +72,6 @@
                     </usersubmenu>
                 </items>
             </tabs>
-            <tabs2
-                jcr:primaryType="nt:unstructured"
-                jcr:title="Tab2"
-                sling:resourceType="granite/ui/components/foundation/container">
-                <items jcr:primaryType="nt:unstructured">
-                    <usersubmenu
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="User Submenu"
-                        sling:resourceType="granite/ui/components/foundation/section">
-                        <layout
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
-                        <items jcr:primaryType="nt:unstructured">
-                            <tab
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <usersubmenudetails
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/multifield"
-                                        class="full-width"
-                                        fieldDescription="Click 'Add field' to add a new User Submenu title and links"
-                                        fieldLabel="User Details">
-                                        <field
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
-                                            acs-commons-nested=""
-                                            name="./myUserSubmenu">
-                                            <layout
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                                                method="absolute"/>
-                                            <items jcr:primaryType="nt:unstructured">
-                                                <column
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/foundation/container">
-                                                    <items jcr:primaryType="nt:unstructured">
-                                                        <title
-                                                            jcr:primaryType="nt:unstructured"
-                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                            fieldDescription="Enter User Submenu title"
-                                                            fieldLabel="User"
-                                                            name="./user"/>
-                                                        <link
-                                                            jcr:primaryType="nt:unstructured"
-                                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                                            fieldDescription="Enter User Submenu Link"
-                                                            fieldLabel="UserLink"
-                                                            name="./link"
-                                                            rootPath="/content"/>
-                                                        <flag
-                                                            jcr:primaryType="nt:unstructured"
-                                                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                                                            checked="{Boolean}false"
-                                                            fieldDescription="Testing Flag for checkbox"
-                                                            name="./flag"
-                                                            text="True or False"
-                                                            title="Checkbox Tooltip"/>
-                                                    </items>
-                                                </column>
-                                            </items>
-                                        </field>
-                                    </usersubmenudetails>
-                                </items>
-                            </tab>
-                        </items>
-                    </usersubmenu>
-                </items>
-            </tabs2>
         </items>
     </content>
 </jcr:root>
