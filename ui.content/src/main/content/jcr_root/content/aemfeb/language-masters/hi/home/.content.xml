@@ -13,6 +13,7 @@
         cq:translationProviderName="microsoft"
         cq:translationSourcePath="/content/aemfeb/language-masters/en/home"
         cq:translationStatus="COMPLETE"
+        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="घर"
         sling:resourceType="weretail/components/structure/page">

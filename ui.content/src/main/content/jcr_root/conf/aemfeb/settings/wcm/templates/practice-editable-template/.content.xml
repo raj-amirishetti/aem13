@@ -7,5 +7,6 @@
         cq:templateType="/conf/aemfeb/settings/wcm/template-types/practice-page"
         jcr:primaryType="cq:PageContent"
         jcr:title="Practice Editable Template"
+        allowedPaths="[/content(/.*)?]"
         status="enabled"/>
 </jcr:root>

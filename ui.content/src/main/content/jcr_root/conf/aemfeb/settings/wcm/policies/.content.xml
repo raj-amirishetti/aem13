@@ -8,11 +8,12 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <content-default
                         jcr:description="Policy for editable layout containers"
-                        jcr:lastModified="{Date}2022-08-23T21:11:46.672+05:30"
+                        jcr:lastModified="{Date}2022-12-26T22:26:44.268+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Test Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
+                        columns="12"
                         components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,group:aemfeb,/apps/weretail/components/content/contentfragment,/apps/weretail/components/content/title]"
                         policyResourceType="wcm/foundation/components/responsivegrid">
                         <cq:authoring jcr:primaryType="nt:unstructured">
@@ -42,7 +43,7 @@
                     </policy_921377675067600>
                     <policy_1654440075872
                         jcr:description="Policy for editable layout containers"
-                        jcr:lastModified="{Date}2022-08-23T21:11:03.877+05:30"
+                        jcr:lastModified="{Date}2022-11-08T12:13:56.919+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="practice policy"
@@ -106,10 +107,29 @@
             </structure>
             <content jcr:primaryType="nt:unstructured">
                 <search jcr:primaryType="nt:unstructured"/>
-                <title jcr:primaryType="nt:unstructured"/>
                 <mycomponents jcr:primaryType="nt:unstructured">
                     <mycontentfragment jcr:primaryType="nt:unstructured"/>
+                    <design-test jcr:primaryType="nt:unstructured">
+                        <policy_1672074788253
+                            jcr:lastModified="{Date}2022-12-26T22:58:37.343+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="designpolicy2"
+                            sling:resourceType="wcm/core/components/policy/policy"
+                            body="Hi Rajashekar"
+                            disableDob="true"
+                            disableFname="false"
+                            disableGender="true"
+                            disableLname="false"
+                            disablePassword="false"
+                            disableUrl="true"
+                            disableWeight="true">
+                            <jcr:content jcr:primaryType="nt:unstructured"/>
+                        </policy_1672074788253>
+                    </design-test>
                 </mycomponents>
+                <text jcr:primaryType="nt:unstructured"/>
+                <title jcr:primaryType="nt:unstructured"/>
             </content>
         </components>
     </aemfeb>
@@ -117,7 +137,34 @@
         <components jcr:primaryType="nt:unstructured">
             <content jcr:primaryType="nt:unstructured">
                 <contentfragment jcr:primaryType="nt:unstructured"/>
-                <title jcr:primaryType="nt:unstructured"/>
+                <title jcr:primaryType="nt:unstructured">
+                    <policy_1663567409412
+                        jcr:lastModified="{Date}2022-09-19T11:36:16.764+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="test"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedTypes="[h1,h2,h3,h4]"
+                        type="h1">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-title--dark"
+                                        cq:styleId="1663567532214"
+                                        cq:styleLabel="dark"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="cmp-title--light"
+                                        cq:styleId="1663567546337"
+                                        cq:styleLabel="light"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1663567409412>
+                </title>
             </content>
             <structure jcr:primaryType="nt:unstructured">
                 <page jcr:primaryType="nt:unstructured"/>

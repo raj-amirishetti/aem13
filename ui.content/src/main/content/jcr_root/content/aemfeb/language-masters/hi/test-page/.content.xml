@@ -8,6 +8,7 @@
         cq:lastTranslationUpdate="{Date}2022-05-29T23:32:17.770+05:30"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
         cq:translationSourcePath="/content/aemfeb/language-masters/en/test-page"
+        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Test Page"
         sling:resourceType="weretail/components/structure/page">

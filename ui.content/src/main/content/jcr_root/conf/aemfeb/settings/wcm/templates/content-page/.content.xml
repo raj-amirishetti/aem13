@@ -2,7 +2,7 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2022-05-27T14:55:20.710+05:30"
+        cq:lastModified="{Date}2022-12-24T21:05:59.757+05:30"
         cq:lastModifiedBy="admin"
         cq:templateType="/conf/aemfeb/settings/wcm/template-types/content-page"
         jcr:description="Simple content page for aemfeb"

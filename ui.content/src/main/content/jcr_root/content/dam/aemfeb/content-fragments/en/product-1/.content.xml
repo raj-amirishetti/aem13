@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="614c4d7d-b541-4305-aa57-86f4bfe1f914">
+    <jcr:content
+        cq:name="product-1"
+        cq:parentPath="/content/dam/aemfeb/content-fragments/en"
+        jcr:lastModified="{Date}2022-09-23T22:50:57.634+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="product-1"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-09-23T22:50:57.635+05:30">
+        <data
+            cq:model="/conf/aemfeb/settings/dam/cfm/models/product"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:primaryType="nt:unstructured"
+                availability="{Boolean}true"
+                availability_x0040_LastModified="{Date}2022-09-23T22:50:45.907+05:30"
+                pcolor="White"
+                pcolor_x0040_LastModified="{Date}2022-09-23T22:50:45.908+05:30"
+                pexpdate="{Date}2022-09-01T00:00:00.000+05:30"
+                pexpdate_x0040_LastModified="{Date}2022-09-23T22:50:45.908+05:30"
+                pinfo="&lt;p>Ram 16gb, Storage 128gb.&lt;/p>&#xa;"
+                pinfo_x0040_ContentType="text/html"
+                pinfo_x0040_LastModified="{Date}2022-09-23T22:50:45.908+05:30"
+                pname="Samsung"
+                pname_x0040_LastModified="{Date}2022-09-23T22:50:45.906+05:30"
+                requirement="{Double}40.0"
+                requirement_x0040_LastModified="{Date}2022-09-23T22:50:45.907+05:30"/>
+            <variation1
+                jcr:primaryType="nt:unstructured"
+                availability="{Boolean}true"
+                availability_x0040_LastModified="{Date}2022-09-23T22:49:19.631+05:30"
+                pcolor="Red"
+                pcolor_x0040_LastModified="{Date}2022-09-23T22:49:19.632+05:30"
+                pexpdate="{Date}2022-09-01T00:00:00.000+05:30"
+                pexpdate_x0040_LastModified="{Date}2022-09-23T22:49:19.632+05:30"
+                pinfo="&lt;p>Ram 16gb, Storage 256gb, triple camera.&lt;/p>&#xa;"
+                pinfo_x0040_ContentType="text/html"
+                pinfo_x0040_LastModified="{Date}2022-09-23T22:49:19.632+05:30"
+                pname="Samsung"
+                pname_x0040_LastModified="{Date}2022-09-23T22:49:19.631+05:30"
+                requirement="{Double}25.0"
+                requirement_x0040_LastModified="{Date}2022-09-23T22:49:19.632+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <variation1
+                    jcr:description=""
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="variation1"
+                    name="variation1">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[pname:7388d949-561d-4c28-aec0-3b813a63f037,availability:7388d949-561d-4c28-aec0-3b813a63f037,requirement:7388d949-561d-4c28-aec0-3b813a63f037,pcolor:7388d949-561d-4c28-aec0-3b813a63f037,pinfo:7388d949-561d-4c28-aec0-3b813a63f037,pexpdate:7388d949-561d-4c28-aec0-3b813a63f037]"/>
+                </variation1>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

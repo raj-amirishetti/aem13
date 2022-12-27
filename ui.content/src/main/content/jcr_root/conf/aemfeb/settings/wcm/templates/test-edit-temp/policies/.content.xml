@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-06-15T23:27:59.408+05:30"
+        cq:lastModified="{Date}2022-12-26T22:49:50.565+05:30"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         sling:resourceType="wcm/core/components/policies/mappings">
@@ -13,7 +13,20 @@
             <responsivegrid
                 cq:policy="wcm/foundation/components/responsivegrid/content-default"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/core/components/policies/mapping"/>
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <aemfeb jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <content jcr:primaryType="nt:unstructured">
+                            <mycomponents jcr:primaryType="nt:unstructured">
+                                <design-test
+                                    cq:policy="aemfeb/components/content/mycomponents/design-test/policy_1672074788253"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                            </mycomponents>
+                        </content>
+                    </components>
+                </aemfeb>
+            </responsivegrid>
             <responsivegrid_772225220
                 cq:policy="wcm/foundation/components/responsivegrid/policy_1654535868965"
                 jcr:primaryType="nt:unstructured"

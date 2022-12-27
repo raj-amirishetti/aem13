@@ -15,6 +15,7 @@
         cq:translationProviderName="microsoft"
         cq:translationSourcePath="/content/aemfeb/language-masters/en/test-page2"
         cq:translationStatus="COMPLETE"
+        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Página de prueba2"
         sling:resourceType="weretail/components/structure/page">

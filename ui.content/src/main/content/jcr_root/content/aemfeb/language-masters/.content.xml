@@ -5,6 +5,7 @@
         cq:lastModified="{Date}2022-05-29T22:39:14.317+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aemfeb/settings/wcm/templates/content-page"
+        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Language Masters"
         sling:resourceType="aemfeb/components/structure/page">

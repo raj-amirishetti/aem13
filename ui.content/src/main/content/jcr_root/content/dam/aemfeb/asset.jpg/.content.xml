@@ -9,7 +9,7 @@
         cq:parentPath="/content/dam/aemfeb"
         dam:assetState="processed"
         dam:relativePath="aemfeb/asset.jpg"
-        jcr:lastModified="{Date}2022-08-16T15:09:56.640+05:30"
+        jcr:lastModified="{Date}2022-09-19T11:28:29.075+05:30"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata

@@ -12,6 +12,7 @@
         cq:translationProviderName="microsoft"
         cq:translationSourcePath="/content/aemfeb/language-masters/en/about-us"
         cq:translationStatus="COMPLETE"
+        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="हमारे बारे में"
         sling:resourceType="weretail/components/structure/page">

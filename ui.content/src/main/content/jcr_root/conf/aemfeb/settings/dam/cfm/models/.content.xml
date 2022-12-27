@@ -3,4 +3,5 @@
     jcr:primaryType="cq:Page">
     <author-cf-model/>
     <movies/>
+    <product/>
 </jcr:root>

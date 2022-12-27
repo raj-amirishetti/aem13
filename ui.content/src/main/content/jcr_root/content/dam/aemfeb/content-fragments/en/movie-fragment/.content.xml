@@ -5,11 +5,16 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="8b504378-f588-48e0-a9af-3170a58655c4">
     <jcr:content
+        cq:lastReplicated="{Date}2022-11-07T10:57:43.180+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:name="movie-fragment"
         cq:parentPath="/content/dam/aemfeb/content-fragments/en"
+        cq:versionCreator="admin"
         jcr:description=""
         jcr:lastModified="{Date}2022-06-19T23:00:33.872+05:30"
         jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent"
         jcr:title="movie-fragment"
         contentFragment="{Boolean}true"

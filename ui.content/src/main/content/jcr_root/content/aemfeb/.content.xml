@@ -6,6 +6,7 @@
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
         cq:lastModified="{Date}2022-05-29T22:39:33.493+05:30"
         cq:lastModifiedBy="reference-adjustment-service"
+        jcr:mixinTypes="[]"
         jcr:primaryType="nt:unstructured"
         jcr:title="aemfeb"
         sling:redirect="{Boolean}true"

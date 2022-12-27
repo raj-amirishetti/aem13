@@ -8,6 +8,7 @@
         cq:template="/conf/aemfeb/settings/wcm/templates/test-edit-temp"
         cq:translationSourcePath="/content/aemfeb/language-masters/en/test-page-"
         cq:translationStatus="DRAFT"
+        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="test-page "
         sling:resourceType="weretail/components/structure/page">
