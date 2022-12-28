@@ -111,19 +111,19 @@
                     <mycontentfragment jcr:primaryType="nt:unstructured"/>
                     <design-test jcr:primaryType="nt:unstructured">
                         <policy_1672074788253
-                            jcr:lastModified="{Date}2022-12-26T22:58:37.343+05:30"
+                            jcr:lastModified="{Date}2022-12-27T16:40:44.408+05:30"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             jcr:title="designpolicy2"
                             sling:resourceType="wcm/core/components/policy/policy"
                             body="Hi Rajashekar"
-                            disableDob="true"
+                            disableDob="false"
                             disableFname="false"
-                            disableGender="true"
+                            disableGender="false"
                             disableLname="false"
                             disablePassword="false"
-                            disableUrl="true"
-                            disableWeight="true">
+                            disableUrl="false"
+                            disableWeight="false">
                             <jcr:content jcr:primaryType="nt:unstructured"/>
                         </policy_1672074788253>
                     </design-test>

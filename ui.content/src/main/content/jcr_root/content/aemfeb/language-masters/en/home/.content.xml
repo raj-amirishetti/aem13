@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-12-26T22:30:28.517+05:30"
+        cq:lastModified="{Date}2022-12-28T15:51:19.473+05:30"
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2022-11-07T10:46:41.385+05:30"
         cq:lastReplicatedBy="admin"
@@ -43,6 +43,19 @@
                     sling:resourceType="aemfeb/components/content/mycomponents/design-test"
                     firstName="rajashekar"
                     gender="male"/>
+                <showhide_dropdown
+                    jcr:created="{Date}2022-12-28T15:46:00.361+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-12-28T15:51:19.467+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemfeb/components/content/mycomponents/showhide-dropdown"
+                    camera="55px"
+                    hdr="true"
+                    keyboardLayout="qwertz"
+                    os="android"
+                    productType="phone"
+                    resolution="uhd"/>
             </responsivegrid>
             <responsivegrid_2026437577
                 jcr:created="{Date}2022-05-27T15:22:58.906+05:30"
