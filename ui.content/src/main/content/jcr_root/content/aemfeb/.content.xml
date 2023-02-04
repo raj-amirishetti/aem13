@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:allowedTemplates="[/conf/aemfeb/settings/wcm/templates/.*]"
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
         cq:lastModified="{Date}2022-05-29T22:39:33.493+05:30"
         cq:lastModifiedBy="reference-adjustment-service"
-        jcr:mixinTypes="[]"
+        cq:lastReplicated="{Date}2023-01-08T17:59:13.884+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
         jcr:primaryType="nt:unstructured"
         jcr:title="aemfeb"
+        jcr:uuid="ddd3c3e1-62a6-40ef-8893-31e2e10bacd0"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"

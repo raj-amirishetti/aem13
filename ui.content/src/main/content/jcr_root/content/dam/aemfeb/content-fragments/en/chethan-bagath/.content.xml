@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="f75390d0-9602-443e-be91-9c93b3df4d79">
+    <jcr:content
+        cq:name="chethan-bagath"
+        cq:parentPath="/content/dam/aemfeb/content-fragments/en"
+        cq:versionCreator="admin"
+        jcr:description=""
+        jcr:lastModified="{Date}2023-01-08T23:47:13.573+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Chethan Bagath"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2023-01-08T23:47:13.573+05:30">
+        <data
+            cq:model="/conf/aemfeb/settings/dam/cfm/models/author-cf-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:primaryType="nt:unstructured"
+                authorbio="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xa;"
+                authorbio_x0040_ContentType="text/html"
+                authorbio_x0040_LastModified="{Date}2023-01-08T23:47:13.480+05:30"
+                authorname="Chetan Bhagath"
+                authorname_x0040_LastModified="{Date}2023-01-08T23:47:13.478+05:30"
+                books="[Half Girlfriend,]"
+                books_x0040_LastModified="{Date}2023-01-08T23:47:13.479+05:30"
+                isauthor="{Boolean}true"
+                isauthor_x0040_LastModified="{Date}2023-01-08T23:47:13.480+05:30"
+                profession="both"
+                profession_x0040_LastModified="{Date}2023-01-08T23:47:13.480+05:30"
+                publishdate="{Date}2022-12-07T00:00:00.000+05:30"
+                publishdate_x0040_LastModified="{Date}2023-01-08T23:47:13.479+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

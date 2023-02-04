@@ -3,6 +3,9 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastReplicated="{Date}2022-12-28T21:07:14.838+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Deactivate"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="weretail/components/structure/page">
         <root

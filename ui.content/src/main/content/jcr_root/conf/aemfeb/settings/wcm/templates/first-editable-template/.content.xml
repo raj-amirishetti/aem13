@@ -4,6 +4,9 @@
     <jcr:content
         cq:lastModified="{Date}2022-12-27T16:40:44.421+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-12-28T21:07:14.838+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Deactivate"
         cq:templateType="/conf/aemfeb/settings/wcm/template-types/test-page"
         jcr:description="My First Editable Template"
         jcr:primaryType="cq:PageContent"

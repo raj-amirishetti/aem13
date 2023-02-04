@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2022-12-28T21:06:56.383+05:30"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Deactivate"
     jcr:description="To get the ArrayList data into sightly through Sling Models"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
     jcr:primaryType="cq:Component"
     jcr:title="Task Component"
     componentGroup="aemfeb"/>

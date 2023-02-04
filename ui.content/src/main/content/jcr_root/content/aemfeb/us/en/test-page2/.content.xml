@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-06-01T17:40:23.533+05:30"
+        cq:lastModified="{Date}2023-01-08T18:01:08.976+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2023-01-08T18:01:17.506+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:lastRolledout="{Date}2022-06-01T17:40:23.555+05:30"
         cq:lastRolledoutBy="admin"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
-        jcr:mixinTypes="[cq:LiveRelationship]"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:LiveRelationship,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Test Page2"
+        jcr:uuid="b750dcc2-f1e9-4aa4-885f-f486401815e5"
         sling:resourceType="weretail/components/structure/page">
         <root
             jcr:lastModified="{Date}2022-05-27T15:22:36.147+05:30"
@@ -24,7 +29,21 @@
                 jcr:lastModifiedBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <image
+                    jcr:created="{Date}2023-01-08T18:00:31.515+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2023-01-08T18:01:08.889+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemfeb/components/content/image"
+                    alt="adfa"
+                    displayPopupTitle="true"
+                    fileName="footer-mobile-logo.png"
+                    isDecorative="false">
+                    <file/>
+                </image>
+            </responsivegrid>
             <responsivegrid_2026437577
                 jcr:created="{Date}2022-05-27T15:22:58.906+05:30"
                 jcr:createdBy="admin"

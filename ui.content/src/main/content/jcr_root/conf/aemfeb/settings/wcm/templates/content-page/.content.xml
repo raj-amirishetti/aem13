@@ -2,8 +2,11 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2022-12-24T21:05:59.757+05:30"
+        cq:lastModified="{Date}2022-12-28T20:39:04.318+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-12-28T21:07:14.838+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Deactivate"
         cq:templateType="/conf/aemfeb/settings/wcm/template-types/content-page"
         jcr:description="Simple content page for aemfeb"
         jcr:primaryType="cq:PageContent"

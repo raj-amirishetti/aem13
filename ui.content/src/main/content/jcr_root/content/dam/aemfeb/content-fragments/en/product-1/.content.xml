@@ -5,10 +5,15 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="614c4d7d-b541-4305-aa57-86f4bfe1f914">
     <jcr:content
+        cq:lastReplicated="{Date}2023-01-08T22:31:06.226+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:name="product-1"
         cq:parentPath="/content/dam/aemfeb/content-fragments/en"
+        cq:versionCreator="admin"
         jcr:lastModified="{Date}2022-09-23T22:50:57.634+05:30"
         jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent"
         jcr:title="product-1"
         contentFragment="{Boolean}true"

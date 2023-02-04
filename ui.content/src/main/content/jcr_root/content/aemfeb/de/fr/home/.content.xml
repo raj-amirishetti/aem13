@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:lastModified="{Date}2022-05-29T23:09:42.502+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2023-01-08T16:57:47.820+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:lastRolledout="{Date}2022-05-29T23:09:42.503+05:30"
         cq:lastRolledoutBy="admin"
         cq:lastTranslationUpdate="{Date}2022-05-29T22:50:17.921+05:30"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
         cq:translationSourcePath="/content/aemfeb/language-masters/en/home"
         cq:translationStatus="DRAFT"
-        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync,mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Home"
+        jcr:uuid="944e0ee7-bdfc-44dd-834a-e8089be20d9c"
         sling:resourceType="weretail/components/structure/page">
         <root
             cq:lastRolledout="{Date}2022-05-29T23:09:42.488+05:30"

@@ -4,6 +4,9 @@
     jcr:primaryType="cq:Template"
     ranking="{Long}1">
     <jcr:content
+        cq:lastReplicated="{Date}2022-12-28T21:07:14.838+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Deactivate"
         jcr:description="Generic template for web pages"
         jcr:primaryType="cq:PageContent"
         jcr:title="aemfeb Empty Page"/>

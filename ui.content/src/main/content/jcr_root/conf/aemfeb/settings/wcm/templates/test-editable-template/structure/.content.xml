@@ -5,6 +5,9 @@
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
         cq:lastModified="{Date}2022-06-07T23:24:53.704+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-12-28T21:07:14.838+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Deactivate"
         cq:template="/conf/aemfeb/settings/wcm/templates/test-editable-template"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="weretail/components/structure/page">

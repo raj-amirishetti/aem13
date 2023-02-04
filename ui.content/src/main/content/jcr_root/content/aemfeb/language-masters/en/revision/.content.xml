@@ -4,7 +4,7 @@
     <jcr:content
         cq:lastModified="{Date}2022-11-05T11:15:16.603+05:30"
         cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2022-11-07T10:46:41.385+05:30"
+        cq:lastReplicated="{Date}2023-01-08T22:27:52.007+05:30"
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Activate"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"

@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
         cq:lastModified="{Date}2022-06-21T22:10:15.181+05:30"
         cq:lastModifiedBy="translation-job-service"
+        cq:lastReplicated="{Date}2023-01-08T16:57:41.025+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:lastTranslationUpdate="{Date}2022-06-21T22:10:15.181+05:30"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
         cq:translationSourcePath="/content/aemfeb/language-masters/en/test-page"
         cq:translationStatus="DRAFT"
-        jcr:mixinTypes="[]"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Test Page"
+        jcr:uuid="9f8545f8-6366-4395-840c-e372cb432371"
         sling:resourceType="weretail/components/structure/page">
         <root
             jcr:lastModified="{Date}2022-05-27T15:22:36.147+05:30"

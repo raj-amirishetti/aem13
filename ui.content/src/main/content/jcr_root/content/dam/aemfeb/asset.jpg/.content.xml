@@ -5,12 +5,16 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="cbbb3fbe-cf16-4aa0-aaff-0c58a0a5aa83">
     <jcr:content
+        cq:lastReplicated="{Date}2023-01-08T16:50:29.191+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:name="asset.jpg"
         cq:parentPath="/content/dam/aemfeb"
         dam:assetState="processed"
         dam:relativePath="aemfeb/asset.jpg"
         jcr:lastModified="{Date}2022-09-19T11:28:29.075+05:30"
         jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}24"
