@@ -10,18 +10,17 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 
 import com.aem.aemfeb.core.service.CustomHttpService;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
-@Model(adaptables= Resource.class)
+@Model(adaptables= Resource.class, defaultInjectionStrategy=DefaultInjectionStrategy.OPTIONAL)
 public class WeatherModel {
 	
 	
-	@Inject @Default(values ="Enter Location")
+	@Inject @Default(values ="Hyderabad")
 	private String location;
 	
 	@OSGiService
