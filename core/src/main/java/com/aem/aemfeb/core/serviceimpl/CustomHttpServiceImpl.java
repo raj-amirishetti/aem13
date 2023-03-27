@@ -9,6 +9,7 @@ import java.util.Map;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.fluent.Request;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.osgi.services.HttpClientBuilderFactory;
@@ -30,6 +31,8 @@ public class CustomHttpServiceImpl implements CustomHttpService {
 		return httpFactory.newBuilder().build();
 	}
 
+
+	
 	@Override
 	public <T> T makeGetCall(String url, Class<T> t, Map<String, String> params) {
 

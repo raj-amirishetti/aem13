@@ -5,5 +5,6 @@
         jcr:encoding="UTF-8"
         jcr:lastModifiedBy="Administrator"
         jcr:mimeType="text/plain"
+        jcr:mixinTypes="[]"
         jcr:primaryType="nt:resource"/>
 </jcr:root>

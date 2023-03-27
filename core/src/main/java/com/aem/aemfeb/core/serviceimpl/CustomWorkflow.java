@@ -22,47 +22,37 @@ import com.adobe.granite.workflow.exec.WorkflowData;
 import com.adobe.granite.workflow.exec.WorkflowProcess;
 import com.adobe.granite.workflow.metadata.MetaDataMap;
 
-@Component(
-        service = WorkflowProcess.class,
-        property = { "process.label=" + "Adding property"
-        })
-public class CustomWorkflow implements WorkflowProcess{
+@Component(service = WorkflowProcess.class, property = { "process.label=" + "Adding property" })
+public class CustomWorkflow implements WorkflowProcess {
 
 	@Reference
 	ResourceResolverFactory factory;
-	
-	
-	
-	@Override
-	public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap metadatamap) throws WorkflowException {
-		// TODO Auto-generated method stub
-		
-	
-		  WorkflowData wdata =workItem.getWorkflowData();
-		  
-		String payload =   wdata.getPayload().toString()+"/jcr:content";
-		
-		
-		ResourceResolver resolver= workflowSession.adaptTo(ResourceResolver.class);
-		
-				
-		
 
-		/* Map<String, Object> map = new HashMap<String, Object>();
-		map.put(ResourceResolverFactory.SUBSERVICE, "testSystemUser");  */
+	@Override
+	public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap metadatamap)
+			throws WorkflowException {
+		// TODO Auto-generated method stub
+
+		WorkflowData wdata = workItem.getWorkflowData();
+
+		String payload = wdata.getPayload().toString() + "/jcr:content";
+
+		ResourceResolver resolver = workflowSession.adaptTo(ResourceResolver.class);
+
+		/*
+		 * Map<String, Object> map = new HashMap<String, Object>();
+		 * map.put(ResourceResolverFactory.SUBSERVICE, "testSystemUser");
+		 */
 
 		try {
-			//ResourceResolver resolver = factory.getServiceResourceResolver(map);
+			// ResourceResolver resolver = factory.getServiceResourceResolver(map);
 
 			Resource resource = resolver.getResource(payload);
 
 			Node node = resource.adaptTo(Node.class);
-			
-			
-			
-			node.addNode("addingNode").setPrimaryType("cq:PageContent");	
-			
-			
+
+			node.addNode("addingNode").setPrimaryType("cq:PageContent");
+
 			node.setProperty("city", "Hyderabad");
 
 			resolver.adaptTo(Session.class).save();
@@ -87,8 +77,6 @@ public class CustomWorkflow implements WorkflowProcess{
 			e.printStackTrace();
 		}
 
-		
-		
 	}
 
 }
