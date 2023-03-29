@@ -30,16 +30,16 @@ public class WorkflowStatusScheduler implements Runnable {
 	private static final Logger LOGGER = LoggerFactory.getLogger(WorkflowStatusScheduler.class);
 	@Reference
 	Scheduler scheduler;
-	
+
 	@Reference
 	WorkflowService workflowService;
-	
+
 	@Reference
 	ResourceResolverService resourceResolverService;
-	
+
 	@Reference
 	EmailService emailService;
-	
+
 	private String schedulerName;
 	private String toEmail;
 	private String ccEmail;
@@ -56,6 +56,7 @@ public class WorkflowStatusScheduler implements Runnable {
 		this.ccEmail = configuration.ccEmail();
 		this.fromEmail = configuration.fromEmail();
 		this.subject = configuration.subject();
+
 	}
 
 	@Modified
@@ -85,13 +86,13 @@ public class WorkflowStatusScheduler implements Runnable {
 			scheduler.schedule(this, scheduleOptions);
 			LOGGER.info("scheduler {} is added", schedulerName);
 		} else {
-			LOGGER.info(" scheduler {} is disabled",schedulerName);
+			LOGGER.info(" scheduler {} is disabled", schedulerName);
 			removeScheduler(configuration);
 		}
 	}
 
 	private void removeScheduler(WorkflowStatusConfiguration configuration) {
-		LOGGER.info(" removing scheduler {}",schedulerName);
+		LOGGER.info(" removing scheduler {}", schedulerName);
 		scheduler.unschedule(configuration.schedulerName());
 	}
 
@@ -107,14 +108,16 @@ public class WorkflowStatusScheduler implements Runnable {
 			String[] states = { "RUNNING", "COMPLETED" };
 			// Get the list of all the workflows by states
 			Workflow[] workflows = workflowSession.getWorkflows(states);
+			;
+
+			LOGGER.info("length of states {}", workflows.length);
 			// Loop through all the workflows
 			for (Workflow workflow : workflows) {
 				workflowDetails.append("ID: ").append(workflow.getId()).append("\n").append("Payload: ")
 						.append(workflow.getWorkflowData().getPayload()).append("\n").append("State: ")
 						.append(workflow.getState()).append("\n");
 			}
-			
-			LOGGER.info(workflowDetails.toString());
+
 		} catch (WorkflowException e) {
 			LOGGER.error("exception occurred: {}", e.getMessage());
 		}
@@ -125,11 +128,10 @@ public class WorkflowStatusScheduler implements Runnable {
 	public void run() {
 		// Getting the workflow status
 		String workflowStatus = getWorkflowStatus();
-		LOGGER.info(workflowStatus +"128");
 		// Make the content ready
-		String content = "Hi, " + "\n" + "It is successfull: " + LocalDateTime.now() + "\n"
+		String content = "Hi, " + "\n" + ":::::Following are Workflows:::: " + LocalDateTime.now() + "\n"
 				+ workflowStatus;
-		// Send emails	
+		// Send emails
 		LOGGER.info(content);
 		emailService.sendEmail(toEmail, ccEmail, fromEmail, subject, content);
 		LOGGER.info("{}: workflow status email is sent");

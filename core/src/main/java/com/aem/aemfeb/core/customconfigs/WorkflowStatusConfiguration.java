@@ -6,17 +6,13 @@ import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.AttributeType;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
-import static com.aem.aemfeb.core.customconfigs.WorkflowStatusConfiguration.CONFIGURATION_DESCRIPTION;
-import static com.aem.aemfeb.core.customconfigs.WorkflowStatusConfiguration.CONFIGURATION_NAME;
-
 @ObjectClassDefinition(
-        name = CONFIGURATION_NAME,
-        description = CONFIGURATION_DESCRIPTION
+        name = "Workflow Status Configuration",
+        description = "This configuration captures the details for getting workflow status and sending email"
 )
 public @interface WorkflowStatusConfiguration {
 
-    String CONFIGURATION_NAME = "Workflow Status Configuration";
-    String CONFIGURATION_DESCRIPTION = "This configuration captures the details for getting workflow status and sending email";
+    
     String DEFAULT_EMAIL_ADDRESS = "raj.amirishetti@gmail.com";
 
     @AttributeDefinition(
@@ -24,7 +20,7 @@ public @interface WorkflowStatusConfiguration {
             description = "Enter a unique identifier that represents name of the scheduler",
             type = AttributeType.STRING
     )
-    String schedulerName() default CONFIGURATION_NAME;
+    String schedulerName() default "Workflow Status Configuration";
 
     @AttributeDefinition(
             name = "Enabled",
@@ -66,5 +62,5 @@ public @interface WorkflowStatusConfiguration {
             description = "Enter the subject of the email",
             type = AttributeType.STRING
     )
-    String subject() default CONFIGURATION_NAME;
+    String subject() default "Workflow Status Configuration";
 }
