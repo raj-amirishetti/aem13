@@ -1,4 +1,4 @@
-package com.aem.aemfeb.core.dbutils;
+package com.aem.aemfeb.core.utils;
 
 import java.sql.Connection;
 import javax.sql.DataSource;

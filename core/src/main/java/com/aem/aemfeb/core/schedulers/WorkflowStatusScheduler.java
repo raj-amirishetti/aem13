@@ -28,6 +28,7 @@ public class WorkflowStatusScheduler implements Runnable {
 
 	protected static final String NAME = "Workflow Status Scheduler";
 	private static final Logger LOGGER = LoggerFactory.getLogger(WorkflowStatusScheduler.class);
+
 	@Reference
 	Scheduler scheduler;
 
@@ -100,6 +101,7 @@ public class WorkflowStatusScheduler implements Runnable {
 		// This string will store the status for all workflows and other data
 		StringBuilder workflowDetails = new StringBuilder();
 		try {
+
 			// Get the JCR session
 			Session session = resourceResolverService.getResourceResolver().adaptTo(Session.class);
 			// Get the workflow session
@@ -108,7 +110,6 @@ public class WorkflowStatusScheduler implements Runnable {
 			String[] states = { "RUNNING", "COMPLETED" };
 			// Get the list of all the workflows by states
 			Workflow[] workflows = workflowSession.getWorkflows(states);
-			;
 
 			LOGGER.info("length of states {}", workflows.length);
 			// Loop through all the workflows

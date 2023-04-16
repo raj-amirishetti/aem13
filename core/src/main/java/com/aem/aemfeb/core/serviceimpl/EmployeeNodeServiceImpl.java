@@ -54,7 +54,7 @@ public class EmployeeNodeServiceImpl implements EmployeeNodeService {
 			resourceResolver = resolverFactory.getServiceResourceResolver(params);
 			
 
-			resource = resourceResolver.getResource("/content/practice-page/jcr:content/parcontent/noderegister");
+			resource = resourceResolver.getResource("/content/aemfeb/language-masters/en/jcr:content/root/responsivegrid/noderegister");
 
 			log.info("Resource "+resource);
 

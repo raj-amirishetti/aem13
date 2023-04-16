@@ -149,10 +149,6 @@
         </root>
         <image/>
     </jcr:content>
-    <create-page-with-edtemp/>
     <home/>
     <about-us/>
-    <test-page/>
-    <test-page2/>
-    <test-page-/>
 </jcr:root>

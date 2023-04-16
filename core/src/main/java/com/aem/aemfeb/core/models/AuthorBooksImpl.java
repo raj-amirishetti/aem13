@@ -15,6 +15,9 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.aem.aemfeb.core.bean.MultifieldHelper;
+import com.aem.aemfeb.core.bean.NestedHelper;
+
 @Model(adaptables = SlingHttpServletRequest.class,
 
 		defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)

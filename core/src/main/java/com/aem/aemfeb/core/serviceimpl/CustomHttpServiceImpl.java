@@ -9,7 +9,6 @@ import java.util.Map;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.fluent.Request;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.osgi.services.HttpClientBuilderFactory;
@@ -17,6 +16,7 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 import com.aem.aemfeb.core.service.CustomHttpService;
+import com.aem.aemfeb.core.utils.OptionalUtil;
 import com.google.gson.Gson;
 
 @Component(immediate = true, service = CustomHttpService.class)
@@ -58,7 +58,7 @@ public class CustomHttpServiceImpl implements CustomHttpService {
 			try {
 				builder.addParameter(k, URLDecoder.decode(v, "utf-8"));
 			} catch (UnsupportedEncodingException e) {
-				// log.error("UnsupportedEncodingException : {} ", e.getMessage());
+				//log.error("UnsupportedEncodingException : {} ", e.getMessage());
 			}
 		}));
 		return builder;

@@ -1,4 +1,4 @@
-package com.aem.aemfeb.core.models;
+package com.aem.aemfeb.core.bean;
 
 import java.util.Date;
 

@@ -13,8 +13,6 @@ import org.slf4j.LoggerFactory;
 
 import com.aem.aemfeb.core.bean.Employees;
 import com.aem.aemfeb.core.service.EmployeeI;
-import com.aem.aemfeb.core.serviceimpl.EmployeeImpl;
-
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;

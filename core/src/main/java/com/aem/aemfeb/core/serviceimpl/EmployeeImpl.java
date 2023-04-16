@@ -13,8 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.aem.aemfeb.core.bean.Employees;
-import com.aem.aemfeb.core.dbutils.DatabaseConnectionHelper;
 import com.aem.aemfeb.core.service.EmployeeI;
+import com.aem.aemfeb.core.utils.DatabaseConnectionHelper;
 
 @Component(immediate = true, service = EmployeeI.class)
 public class EmployeeImpl implements EmployeeI {

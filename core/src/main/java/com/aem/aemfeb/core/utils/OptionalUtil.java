@@ -1,4 +1,4 @@
-package com.aem.aemfeb.core.serviceimpl;
+package com.aem.aemfeb.core.utils;
 
 import java.util.Optional;
 import java.util.function.Supplier;

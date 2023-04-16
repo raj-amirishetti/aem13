@@ -1,4 +1,4 @@
-package com.aem.aemfeb.core.serviceimpl;
+package com.aem.aemfeb.core.utils;
 
 
 import org.apache.sling.api.resource.LoginException;

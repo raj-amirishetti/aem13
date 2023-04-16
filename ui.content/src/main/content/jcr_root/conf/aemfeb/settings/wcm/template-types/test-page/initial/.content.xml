@@ -6,5 +6,5 @@
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Deactivate"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="weretail/components/structure/page"/>
+        sling:resourceType="aemfeb/components/structure/page"/>
 </jcr:root>

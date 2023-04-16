@@ -1,4 +1,4 @@
-package com.aem.aemfeb.core.models;
+package com.aem.aemfeb.core.bean;
 
 public class ListPageDetail {
 	private String title;

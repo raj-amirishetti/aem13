@@ -7,7 +7,7 @@
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Deactivate"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="weretail/components/structure/page">
+        sling:resourceType="aemfeb/components/structure/page">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid"/>
