@@ -86,7 +86,8 @@ public class CustomEventListener implements EventListener {
 			 * Adding the event listener
 			 */
 			session.getWorkspace().getObservationManager().addEventListener(this,
-					Event.PROPERTY_ADDED | Event.NODE_ADDED, "/content/firstpage/jcr:content", true, null, null, false);	
+					Event.PROPERTY_ADDED | Event.NODE_ADDED, "/content/firstpage/jcr:content", true, null, null, false);
+			
 			
 			
 			
