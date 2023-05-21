@@ -4,22 +4,22 @@
     jcr:primaryType="sling:OrderedFolder">
     <rep:policy/>
     <dam/>
+    <campaigns/>
+    <projects/>
     <experience-fragments/>
     <cq:tags/>
-    <projects/>
     <usergenerated/>
-    <screens/>
-    <catalogs/>
+    <core-components-examples/>
     <launches/>
-    <campaigns/>
     <communities/>
     <sites/>
     <forms/>
+    <catalogs/>
+    <screens/>
     <community/>
     <community-components/>
     <we-retail/>
+    <wknd-events/>
+    <cq:graphql/>
     <aemfeb/>
-    <firstpage/>
-    <practice-page/>
-    <practicewithdeepak/>
 </jcr:root>

@@ -44,7 +44,10 @@ import java.io.IOException;
            })
 public class SimpleServlet extends SlingSafeMethodsServlet {
 
-    private static final long serialVersionUid = 1L;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
     @Override
     protected void doGet(final SlingHttpServletRequest req,

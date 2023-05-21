@@ -86,10 +86,13 @@ public class JsonDataDropdownServlet extends SlingSafeMethodsServlet {
 			JSONObject jsonObject = new JSONObject(stringBuilder.toString());
 			Iterator<String> jsonKeys = jsonObject.keys();
 
+			
 			// Iterating JSON Objects over key
 			while (jsonKeys.hasNext()) {
 				String jsonKey = jsonKeys.next();
 				String jsonValue = jsonObject.getString(jsonKey);
+				
+			
 
 				valueMap = new ValueMapDecorator(new HashMap<>());
 				valueMap.put("value", jsonKey);
