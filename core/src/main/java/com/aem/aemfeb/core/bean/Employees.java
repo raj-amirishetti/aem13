@@ -33,6 +33,6 @@ public class Employees {
 	}
 	@Override
 	public String toString() {
-		return "Employees [name=" + name + ", age=" + age + ", email=" + email + ", weight=" + weight + "]";
+		return "[name=" + name + ", age=" + age + ", email=" + email + ", weight=" + weight + "]";
 	}
 }
