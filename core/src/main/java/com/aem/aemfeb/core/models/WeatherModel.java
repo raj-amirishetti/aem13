@@ -20,7 +20,7 @@ import com.google.gson.JsonObject;
 public class WeatherModel {
 	
 	
-	@Inject @Default(values ="Hyderabad")
+	@Inject @Default(values ="karimnagar")
 	private String location;
 	
 	@OSGiService
