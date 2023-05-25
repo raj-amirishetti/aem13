@@ -31,8 +31,6 @@ public class CustomHttpServiceImpl implements CustomHttpService {
 		return httpFactory.newBuilder().build();
 	}
 
-
-	
 	@Override
 	public <T> T makeGetCall(String url, Class<T> t, Map<String, String> params) {
 

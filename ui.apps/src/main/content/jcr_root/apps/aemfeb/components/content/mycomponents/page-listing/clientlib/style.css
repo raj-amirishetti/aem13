@@ -1,0 +1,28 @@
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.article-body {
+  flex: 1 0 21%; 
+  margin: 5px;
+  height: auto;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+
+}
+
+.article-title{
+
+    text-transform: uppercase;    
+
+    text-align: center;
+}
+
+
+.article-description{
+    text-align: justify;
+    margin: 10px;
+    padding: 5px;
+    }

@@ -1,15 +1,25 @@
-<!-- /* -To display the children’s list under a parent page path using sling model */-->
+<!--/* -To display the children’s list under a parent page path using sling model */-->
 
 
-<h1>List Children Dynamically</h1>
 
 
 <sly data-sly-use.pageListing="com.aem.aemfeb.core.models.PageListing"/>
 
 
-	<sly data-sly-list.iteratePageList="${ pageListing.datafromModelList}">
+	<div class=article-container data-sly-list.iteratePageList="${ pageListing.datafromModelList}">
 
-		<h3>${ iteratePageList.title}</h2>
-		<p>${ iteratePageList.description}</p>
-    </sly>
+	<div class=article-body>
+
+        <div class=article-title>
+            <h2>${iteratePageList.title}</h2>
+        </div>
+
+		<div class=article-description>
+        <p>${iteratePageList.description}</p>
+        </div>
+
+   </div>
+
+    </div>
 </sly>
+
