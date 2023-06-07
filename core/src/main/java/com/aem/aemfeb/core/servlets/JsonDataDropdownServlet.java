@@ -9,7 +9,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map.Entry;
 import java.util.Objects;
+import java.util.Set;
+
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 import javax.servlet.Servlet;
@@ -28,12 +31,15 @@ import org.apache.sling.commons.json.JSONObject;
 import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;      
+import org.slf4j.LoggerFactory;
 
 import com.adobe.granite.ui.components.ds.DataSource;
 import com.adobe.granite.ui.components.ds.SimpleDataSource;
 import com.adobe.granite.ui.components.ds.ValueMapResource;
 import com.day.cq.commons.jcr.JcrConstants;
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 
 @Component(service = Servlet.class, property = { Constants.SERVICE_DESCRIPTION + "=Json Data in dynamic Dropdown",
 		"sling.servlet.paths=" + "/bin/jsonDataDropdown", "sling.servlet.methods=" + HttpConstants.METHOD_GET })
@@ -83,16 +89,28 @@ public class JsonDataDropdownServlet extends SlingSafeMethodsServlet {
 				stringBuilder.append(eachLine);
 			}
 
-			JSONObject jsonObject = new JSONObject(stringBuilder.toString());
-			Iterator<String> jsonKeys = jsonObject.keys();
+			JsonObject jsonObject = new Gson().fromJson(stringBuilder.toString(), JsonObject.class);
 
-			
-			// Iterating JSON Objects over key
-			while (jsonKeys.hasNext()) {
-				String jsonKey = jsonKeys.next();
-				String jsonValue = jsonObject.getString(jsonKey);
-				
-			
+			Set<Entry<String, JsonElement>> entrySet = jsonObject.entrySet();
+
+			for (Entry<String, JsonElement> entry : entrySet) {
+
+				String jsonKey = entry.getKey();
+				String jsonValue = entry.getValue().getAsString();
+
+				/*
+				 * JSONObject jsonObject = new JSONObject(stringBuilder.toString());
+				 * 
+				 * 
+				 * Iterator<String> jsonKeys = jsonObject.keys();
+				 * 
+				 *  //Iterating JSON Objects over key 
+				 *  while (jsonKeys.hasNext()) 
+				 *  { 
+				 *  String jsonKey = jsonKeys.next(); 
+				 *  String jsonValue = jsonObject.getString(jsonKey);
+				 
+				 */
 
 				valueMap = new ValueMapDecorator(new HashMap<>());
 				valueMap.put("value", jsonKey);
@@ -106,7 +124,7 @@ public class JsonDataDropdownServlet extends SlingSafeMethodsServlet {
 			DataSource dataSource = new SimpleDataSource(resourceList.iterator());
 			request.setAttribute(DataSource.class.getName(), dataSource);
 
-		} catch (JSONException | IOException | RepositoryException e) {
+		} catch (IOException | RepositoryException e) {
 			LOGGER.error("Error in Json Data Exporting : {}", e.getMessage());
 		}
 	}
