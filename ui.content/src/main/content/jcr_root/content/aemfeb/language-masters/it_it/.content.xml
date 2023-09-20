@@ -2,19 +2,20 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:cloudserviceconfigs="[/libs/settings/cloudconfigs/translation/translationcfg/default_translation]"
+        cq:conf="/conf/aemfeb"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2023-04-07T17:38:53.647+05:30"
-        cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2023-03-15T14:28:12.025+05:30"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
+        cq:lastModified="{Date}2023-09-06T12:56:26.820+05:30"
+        cq:lastModifiedBy="translation-job-service"
+        cq:lastTranslationUpdate="{Date}2023-09-06T12:56:26.820+05:30"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
+        cq:translationSourcePath="/content/aemfeb/language-masters/en"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="English"
-        jcr:uuid="b3965d3f-0f50-46c3-aa88-18144702cd51"
+        jcr:title="it_it"
+        jcr:uuid="baadbccf-48bd-4bf3-8dbd-ae2c380ee15c"
         sling:resourceType="aemfeb/components/structure/page"
         pageTitle="New Project"
         socialMedia="[facebook]">
@@ -120,6 +121,7 @@
         </root>
         <image/>
     </jcr:content>
+    <testing/>
     <home/>
     <about-us/>
     <products/>

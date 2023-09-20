@@ -2,17 +2,16 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2023-05-21T17:42:51.953+05:30"
-        cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2023-03-28T22:44:10.734+05:30"
-        cq:lastReplicatedBy="workflow-process-service"
-        cq:lastReplicationAction="Activate"
+        cq:lastModified="{Date}2023-09-06T12:56:37.196+05:30"
+        cq:lastModifiedBy="translation-job-service"
+        cq:lastTranslationUpdate="{Date}2023-09-06T12:56:37.196+05:30"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
+        cq:translationSourcePath="/content/aemfeb/language-masters/en/about-us"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="About Us"
-        jcr:uuid="87292c0e-7c24-47e8-a574-8ce88689e594"
+        jcr:uuid="c247c8c0-500b-46d6-992e-515b2d909312"
         sling:resourceType="aemfeb/components/structure/page">
         <root
             jcr:lastModified="{Date}2022-05-27T15:22:36.147+05:30"

@@ -2,14 +2,12 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2023-05-25T11:45:14.526+05:30"
+        cq:lastModified="{Date}2023-05-25T14:57:44.888+05:30"
         cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2022-12-28T21:07:14.838+05:30"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Deactivate"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
+        jcr:description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
         jcr:primaryType="cq:PageContent"
-        jcr:title="Products"
+        jcr:title="Article14"
         sling:resourceType="aemfeb/components/structure/page">
         <root
             jcr:lastModified="{Date}2022-05-27T15:22:36.147+05:30"
@@ -22,15 +20,7 @@
                 jcr:lastModified="{Date}2022-05-27T15:26:20.239+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid">
-                <practicecomponent
-                    jcr:created="{Date}2023-05-25T11:45:14.522+05:30"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2023-05-25T11:45:14.522+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemfeb/components/content/mycomponents/practicecomponent"/>
-            </responsivegrid>
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
         </root>
     </jcr:content>
 </jcr:root>

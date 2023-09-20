@@ -1,2 +1,17 @@
 <h1>Checking with validations</h1>
 
+
+<div>
+
+<h3> Name: ${properties.fname} ${properties.lname}</h3>
+
+<sly data-sly-test= ${properties.professor}> ${properties.fname} ${properties.lname} is a Professor</sly>
+
+<sly data-sly-test= ${!properties.professor}> ${properties.fname} ${properties.lname} is not Professor</sly>
+
+
+<div> Books ::${properties.books} </div>
+
+
+
+</div>

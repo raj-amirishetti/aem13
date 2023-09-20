@@ -81,5 +81,14 @@
                 xmpNodeType="xmpStruct"/>
         </metadata>
         <related jcr:primaryType="nt:unstructured"/>
+        <usages
+            dam:score="{Long}1"
+            jcr:primaryType="nt:unstructured"
+            usedBy="[aem]">
+            <aem
+                jcr:primaryType="nt:unstructured"
+                count="{Long}1"
+                lastUsed="{Date}2023-09-13T17:13:38.524+05:30"/>
+        </usages>
     </jcr:content>
 </jcr:root>

@@ -2,12 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2023-05-25T11:45:14.526+05:30"
-        cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2022-12-28T21:07:14.838+05:30"
-        cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Deactivate"
+        cq:lastModified="{Date}2023-09-06T12:56:38.350+05:30"
+        cq:lastModifiedBy="translation-job-service"
+        cq:lastTranslationUpdate="{Date}2023-09-06T12:56:38.350+05:30"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
+        cq:translationSourcePath="/content/aemfeb/language-masters/en/products"
         jcr:primaryType="cq:PageContent"
         jcr:title="Products"
         sling:resourceType="aemfeb/components/structure/page">
