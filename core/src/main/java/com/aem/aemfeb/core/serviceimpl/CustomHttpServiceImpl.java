@@ -6,7 +6,9 @@ import java.net.URISyntaxException;
 import java.net.URLDecoder;
 import java.util.Map;
 
+
 import org.apache.commons.io.IOUtils;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -37,6 +39,7 @@ public class CustomHttpServiceImpl implements CustomHttpService {
 		String response = null;
 
 		try {
+			
 			URIBuilder builder = createBuilderWithParams(url, params);
 			HttpGet getRequest = new HttpGet(builder.build());
 			HttpClient httpClient = getHttpClient();
@@ -55,6 +58,7 @@ public class CustomHttpServiceImpl implements CustomHttpService {
 		OptionalUtil.resolveNestedField(() -> params).ifPresent(httpParams -> params.forEach((k, v) -> {
 			try {
 				builder.addParameter(k, URLDecoder.decode(v, "utf-8"));
+	
 			} catch (UnsupportedEncodingException e) {
 				//log.error("UnsupportedEncodingException : {} ", e.getMessage());
 			}
