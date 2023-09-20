@@ -12,7 +12,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 @Model(adaptables = SlingHttpServletRequest.class, defaultInjectionStrategy=DefaultInjectionStrategy.OPTIONAL)
 public class MyModel {
 
-	@ValueMapValue @Named("text") @Default(values ="Enter YOUR text") 
+	@ValueMapValue @Named("text") @Default(values ="Enter  text") 
 	private String title;
 	
 	@ValueMapValue  @Default(values ="Enter your Name") 
