@@ -5,6 +5,7 @@
     cq:lastReplicationAction="Deactivate"
     jcr:mixinTypes="[cq:ReplicationStatus,rep:AccessControllable]"
     jcr:primaryType="cq:Page">
+    <rep:policy/>
     <wcm jcr:primaryType="nt:unstructured">
         <foundation jcr:primaryType="nt:unstructured">
             <components jcr:primaryType="nt:unstructured">

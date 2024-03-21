@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2023-06-07T14:58:33.816+05:30"
+        cq:lastModified="{Date}2024-03-21T14:36:59.951+05:30"
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2023-03-16T13:23:29.652+05:30"
         cq:lastReplicatedBy="admin"
@@ -64,6 +64,17 @@
                     fname="RAJ"
                     lname="Amirishetti"
                     professor="true"/>
+                <learning
+                    jcr:created="{Date}2024-03-21T14:31:36.218+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-03-21T14:36:59.935+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemfeb/components/content/mycomponents/learning"
+                    author="Rajashekar"
+                    bio="dlk;aj&#xd;&#xa;afkdfdas&#xd;&#xa;fdaskf;lska"
+                    books="Amirishetti"
+                    pdate="{Date}2023-09-11T00:00:00.000+05:30"/>
             </responsivegrid>
         </root>
     </jcr:content>

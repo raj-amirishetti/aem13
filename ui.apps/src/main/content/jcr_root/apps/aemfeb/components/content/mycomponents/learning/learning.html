@@ -1,12 +1,17 @@
-<h3>Hi, this is Rajashekar </h3>
-
-
 
 <div>Author Name: ${properties.author}</div>
 <div> Books :: ${properties.books}</div>
 <div>Published Date:::${'MMM dd,yyyy' @ format=properties.pdate}</div>
 <div>Author Bio:::${properties.bio}</div>
-<h1>${properties.jcr:title}</h1>
+<sly data-sly-use.config="com.aem.aemfeb.core.models.TestConfigModel">
+
+<div>
+<h2>Service ID::: ${config.serviceID}</h2>
+<h2>Service Name::: ${config.serviceName}</h2>
+<h2>Service Description::: ${config.serviceDescription}</h2>
+</div>
+
+</sly>
 
 
 

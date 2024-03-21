@@ -8,6 +8,7 @@
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Deactivate"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
+        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Products"
         sling:resourceType="aemfeb/components/structure/page">
