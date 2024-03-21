@@ -58,9 +58,6 @@ public class AuthorBooksImpl {
 					bookMap.put("bookname", book.getValueMap().get("bookname", String.class));
 					bookMap.put("booksubject", book.getValueMap().get("booksubject", String.class));
 					bookMap.put("publishyear", book.getValueMap().get("publishyear", String.class));
-					
-					
-					
 					bookDetailsMap.add(bookMap);
 				}
 			}

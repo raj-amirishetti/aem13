@@ -34,6 +34,7 @@ public class MultifieldHelper {
 			}
 
 			if (resource.getValueMap().get("booksubject", String.class) != null) {
+				
 				this.bookSubject = resource.getValueMap().get("booksubject", String.class);
 			}
 

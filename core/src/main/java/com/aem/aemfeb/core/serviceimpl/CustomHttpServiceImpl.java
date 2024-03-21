@@ -6,7 +6,6 @@ import java.net.URISyntaxException;
 import java.net.URLDecoder;
 import java.util.Map;
 
-
 import org.apache.commons.io.IOUtils;
 
 import org.apache.http.HttpResponse;
@@ -14,9 +13,11 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.osgi.services.HttpClientBuilderFactory;
+import org.apache.sling.models.factory.ModelFactory;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
+import com.aem.aemfeb.core.models.SampleModel;
 import com.aem.aemfeb.core.service.CustomHttpService;
 import com.aem.aemfeb.core.utils.OptionalUtil;
 import com.google.gson.Gson;
@@ -31,6 +32,7 @@ public class CustomHttpServiceImpl implements CustomHttpService {
 
 	protected HttpClient getHttpClient() {
 		return httpFactory.newBuilder().build();
+
 	}
 
 	@Override
@@ -39,7 +41,7 @@ public class CustomHttpServiceImpl implements CustomHttpService {
 		String response = null;
 
 		try {
-			
+
 			URIBuilder builder = createBuilderWithParams(url, params);
 			HttpGet getRequest = new HttpGet(builder.build());
 			HttpClient httpClient = getHttpClient();
@@ -58,9 +60,9 @@ public class CustomHttpServiceImpl implements CustomHttpService {
 		OptionalUtil.resolveNestedField(() -> params).ifPresent(httpParams -> params.forEach((k, v) -> {
 			try {
 				builder.addParameter(k, URLDecoder.decode(v, "utf-8"));
-	
+
 			} catch (UnsupportedEncodingException e) {
-				//log.error("UnsupportedEncodingException : {} ", e.getMessage());
+				// log.error("UnsupportedEncodingException : {} ", e.getMessage());
 			}
 		}));
 		return builder;

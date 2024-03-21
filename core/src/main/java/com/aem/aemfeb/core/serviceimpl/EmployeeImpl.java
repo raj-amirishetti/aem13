@@ -30,8 +30,6 @@ public class EmployeeImpl implements EmployeeI {
 	PreparedStatement pstmt = null;
 
 	public static final Logger log = LoggerFactory.getLogger(EmployeeImpl.class);
-	
-
 
 	@Override
 	public boolean registerEmployeeDetails(String name, String age, String email, String weight) {
@@ -128,10 +126,12 @@ public class EmployeeImpl implements EmployeeI {
 
 		log.info("inside getAllEmployees method");
 		List<Employees> list = new ArrayList<Employees>();
+
 		con = helper.getDataBaseConnection("test");
 
 		try {
 			pstmt = con.prepareStatement("select * from employee");
+
 			ResultSet rs = pstmt.executeQuery();
 
 			while (rs.next()) {

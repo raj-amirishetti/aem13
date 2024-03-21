@@ -2,6 +2,7 @@ package com.aem.aemfeb.core.utils;
 
 import java.sql.Connection;
 import javax.sql.DataSource;
+
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
@@ -17,10 +18,14 @@ public class DatabaseConnectionHelper {
 	private DataSourcePool dataSourceService;
 
 	public Connection getDataBaseConnection(String dataSourceName) {
+		lOG.info("inside dbconnnection");
 		Connection con = null;
+
 		try {
 			DataSource dataSource = (DataSource) dataSourceService.getDataSource(dataSourceName);
+
 			con = dataSource.getConnection();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

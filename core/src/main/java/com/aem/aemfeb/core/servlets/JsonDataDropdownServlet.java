@@ -1,4 +1,4 @@
-  package com.aem.aemfeb.core.servlets;
+package com.aem.aemfeb.core.servlets;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -43,6 +43,8 @@ import com.google.gson.JsonObject;
 public class JsonDataDropdownServlet extends SlingSafeMethodsServlet {
 
 	/**
+	 * 
+	 * 
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
@@ -101,12 +103,9 @@ public class JsonDataDropdownServlet extends SlingSafeMethodsServlet {
 				 * 
 				 * Iterator<String> jsonKeys = jsonObject.keys();
 				 * 
-				 *  //Iterating JSON Objects over key 
-				 *  while (jsonKeys.hasNext()) 
-				 *  { 
-				 *  String jsonKey = jsonKeys.next(); 
-				 *  String jsonValue = jsonObject.getString(jsonKey);
-				 
+				 * //Iterating JSON Objects over key while (jsonKeys.hasNext()) { String jsonKey
+				 * = jsonKeys.next(); String jsonValue = jsonObject.getString(jsonKey);
+				 * 
 				 */
 
 				valueMap = new ValueMapDecorator(new HashMap<>());

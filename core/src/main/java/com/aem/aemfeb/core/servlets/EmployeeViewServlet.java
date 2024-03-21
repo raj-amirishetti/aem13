@@ -21,8 +21,7 @@ import java.io.PrintWriter;
 import java.util.List;
 
 @Component(service = Servlet.class, property = { Constants.SERVICE_DESCRIPTION + "=Employee View Servlet",
-													  "sling.servlet.methods=" + HttpConstants.METHOD_GET, 
-													  "sling.servlet.paths=" + "/bin/viewservlet" })
+		"sling.servlet.methods=" + HttpConstants.METHOD_GET, "sling.servlet.paths=" + "/bin/viewservlet" })
 public class EmployeeViewServlet extends SlingAllMethodsServlet {
 
 	public static final Logger log = LoggerFactory.getLogger(EmployeeViewServlet.class);
@@ -34,18 +33,18 @@ public class EmployeeViewServlet extends SlingAllMethodsServlet {
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
-		
+
 		log.info("inside viewservlet");
 		resp.setContentType("text/html");
 		PrintWriter out = resp.getWriter();
-		
-		out.println("<h1>Employee List</h1>");
-		// Getting the Employees Data into list 
-		List<Employees> list =  objEmp.getAllEmployees();
+
+		out.println("<h1>Employee List from Database</h1>");
+
+		// Getting the Employees Data into list
+		List<Employees> list = objEmp.getAllEmployees();
 		// Displaying the Employees data in Table
 		out.print("<table border='1' width='100%'");
-		out.print(
-				"<tr><th> Name</th><th>Age</th><th>Email</th><th>Weight</th><th>Edit</th> <th>Delete</th> </tr>");
+		out.print("<tr><th> Name</th><th>Age</th><th>Email</th><th>Weight</th><th>Edit</th> <th>Delete</th> </tr>");
 		for (Employees e : list) {
 			out.print("<tr><td>" + e.getName() + "</td><td>" + e.getAge() + "</td><td>" + e.getEmail() + "</td><td>"
 					+ e.getWeight() + "</td><td><a href='/bin/editservlet?id=" + e.getName()
@@ -55,10 +54,8 @@ public class EmployeeViewServlet extends SlingAllMethodsServlet {
 
 		out.close();
 
-	
-
-		//resp.setContentType("text/html");
-		//resp.getWriter().write("<h1>From employee viewservlet</h1>" );
+		// resp.setContentType("text/html");
+		// resp.getWriter().write("<h1>From employee viewservlet</h1>" );
 		// resource.adaptTo(ValueMap.class).get("jcr:title"));
 	}
 }

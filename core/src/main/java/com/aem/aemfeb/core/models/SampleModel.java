@@ -17,10 +17,6 @@ public class SampleModel {
 	@Inject @Default(values ="Enter your ID")
 	private String empid;
 	
-	
-
-	
-	
 	public String getName() {
 		return name;
 	}

@@ -30,7 +30,7 @@ public class ResourceResolverServiceImpl implements ResourceResolverService {
 
     @Reference
     ResourceResolverFactory resourceResolverFactory;
-
+ 
     private ResourceResolver resourceResolver;
 
     @Activate

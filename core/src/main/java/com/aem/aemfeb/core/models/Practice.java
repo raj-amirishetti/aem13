@@ -50,12 +50,7 @@ public class Practice {
 		
 		list.add(pageDetail);
 		
-	}
-    
-    
-     
-		
-		
+	}	
 	}
 	
 }
