@@ -10,7 +10,7 @@ import org.apache.sling.models.annotations.Model;
 @Model(adaptables = Resource.class, defaultInjectionStrategy=DefaultInjectionStrategy.OPTIONAL)
 public class SampleModel {
 	
-	@Inject @Default(values ="Enter your  Name")
+	@Inject @Default(values ="Enter your FullName")
 	private String name;
 	
 	
