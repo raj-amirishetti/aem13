@@ -16,6 +16,7 @@
         jcr:title="English"
         jcr:uuid="b3965d3f-0f50-46c3-aa88-18144702cd51"
         sling:resourceType="aemfeb/components/structure/page"
+        approver1="Rajender"
         pageTitle="New Project"
         socialMedia="[facebook]">
         <root

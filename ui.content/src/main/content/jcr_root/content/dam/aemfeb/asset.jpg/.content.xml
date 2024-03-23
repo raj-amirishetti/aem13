@@ -12,7 +12,7 @@
         cq:parentPath="/content/dam/aemfeb"
         dam:assetState="processed"
         dam:relativePath="aemfeb/asset.jpg"
-        jcr:lastModified="{Date}2024-03-20T19:15:35.081+05:30"
+        jcr:lastModified="{Date}2024-03-21T16:50:57.092+05:30"
         jcr:lastModifiedBy="admin"
         jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent">
@@ -20,7 +20,7 @@
             dam:Bitsperpixel="{Long}24"
             dam:ColorSpace="{Long}-1"
             dam:ExifOffset="{Long}232"
-            dam:extracted="{Date}2024-03-20T19:15:31.851+05:30"
+            dam:extracted="{Date}2024-03-21T16:50:54.660+05:30"
             dam:Fileformat="JPEG"
             dam:JpgFromRawLength="{Long}988"
             dam:JpgFromRawStart="{Long}382"
