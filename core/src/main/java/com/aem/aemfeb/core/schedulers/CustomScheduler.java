@@ -28,7 +28,7 @@ public class CustomScheduler implements Runnable {
 	private String customParameter;
 	
 	/**
-	 * Id of the scheduler based on its name
+	 * ID of the scheduler based on its name
 	 */
 	private int schedulerId;
 	
@@ -65,12 +65,12 @@ public class CustomScheduler implements Runnable {
 	@Modified
 	protected void modified(SlingSchedulerConfiguration config) {
 		
-		/**
+		/*
 		 * Removing the scheduler
 		 */
 		removeScheduler();
 		
-		/**
+		/*
 		 * Updating the scheduler id
 		 */
 		
