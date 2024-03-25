@@ -14,6 +14,12 @@ import com.day.cq.wcm.api.Page;
 		defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class Xyz {
 
+/*
+* Hello
+* this is to practice component creation and pushing into git
+*
+* */
+
 	@ValueMapValue
 	private String fname;
 
