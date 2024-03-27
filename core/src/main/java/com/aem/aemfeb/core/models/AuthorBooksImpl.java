@@ -28,6 +28,7 @@ public class AuthorBooksImpl {
 	@SlingObject
 	Resource componentResource;
 
+
 	@ValueMapValue
 	@Default(values = "AEM")
 	private String authorname;

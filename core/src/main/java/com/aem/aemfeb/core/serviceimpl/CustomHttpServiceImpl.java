@@ -13,11 +13,9 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.osgi.services.HttpClientBuilderFactory;
-import org.apache.sling.models.factory.ModelFactory;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
-import com.aem.aemfeb.core.models.SampleModel;
 import com.aem.aemfeb.core.service.CustomHttpService;
 import com.aem.aemfeb.core.utils.OptionalUtil;
 import com.google.gson.Gson;
