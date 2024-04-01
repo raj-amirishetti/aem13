@@ -47,6 +47,7 @@ public class StartWorkflow extends SlingSafeMethodsServlet {
 			WorkflowModel workflowModel = workflowSession.getModel("/var/workflow/models/create-page-version");
 
 			WorkflowData workflowData = workflowSession.newWorkflowData("JCR_PATH", payload);
+			
 
 			status = workflowSession.startWorkflow(workflowModel, workflowData).getState();
 

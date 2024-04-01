@@ -4,7 +4,8 @@ import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.AttributeType;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
-@ObjectClassDefinition(name = "Workflow Status Configuration", description = "This configuration captures the details for getting workflow status and sending email")
+@ObjectClassDefinition(name = "Workflow Status Configuration", 
+description = "This configuration captures the details for getting workflow status and sending email")
 public @interface WorkflowStatusConfiguration {
 
 	String DEFAULT_EMAIL_ADDRESS = "raj.amirishetti@gmail.com";
@@ -37,7 +38,7 @@ public @interface WorkflowStatusConfiguration {
 			name = "Cc Email",
 			description = "Enter the email address of recipient in CC field",
 			type = AttributeType.STRING)
-	String ccEmail() default "rajashekar.amirishetti@gmail.com";
+	String ccEmail() default "raj.amirishetti@gmail.com";
 
 	@AttributeDefinition(
 			name = "From Email",

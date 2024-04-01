@@ -2,7 +2,6 @@ package com.aem.aemfeb.core.serviceimpl;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +13,8 @@ import com.aem.aemfeb.core.service.TaskService;
 
 	public static final Logger lOG = LoggerFactory.getLogger(TaskServiceImpl.class);
 
+	
+	
 	@Override
 	public List<String> getData() {
 
@@ -25,6 +26,11 @@ import com.aem.aemfeb.core.service.TaskService;
 		al.add("DEVELOPER");
 
 		return al;
+		
+		
+		
+		
+		
 
 	}
 

@@ -16,6 +16,7 @@ import com.aem.aemfeb.core.customconfigs.WorkflowStatusConfiguration;
 import com.aem.aemfeb.core.service.EmailService;
 import com.aem.aemfeb.core.service.ResourceResolverService;
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -57,6 +58,8 @@ public class WorkflowStatusScheduler implements Runnable {
 		this.ccEmail = configuration.ccEmail();
 		this.fromEmail = configuration.fromEmail();
 		this.subject = configuration.subject();
+		
+		addScheduler(configuration);
 
 	}
 
