@@ -24,6 +24,8 @@ public class TestSlingServlet extends SlingSafeMethodsServlet {
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
+		
+		
 		resp.setContentType("text/plain");
 		resp.getWriter().write("Hey wassup Rajashekar");
 		

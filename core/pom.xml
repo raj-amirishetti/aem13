@@ -81,6 +81,7 @@
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.models.api</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -93,6 +94,37 @@
 			<groupId>junit-addons</groupId>
 			<artifactId>junit-addons</artifactId>
 		</dependency>
+
+	
+
+		<!--Testing from aemgeeks-->
+<!--
+		  <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit-addons</groupId>
+            <artifactId>junit-addons</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.wcm</groupId>
+            <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
+            <scope>test</scope>
+-->
+
 		<!-- https://mvnrepository.com/artifact/com.day.commons/day.commons.datasource.poolservice -->
 		<dependency>
 			<groupId>com.day.commons</groupId>

@@ -17,48 +17,63 @@ package com.aem.aemfeb.core.servlets;
 
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
-import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.servlets.HttpConstants;
-import org.apache.sling.api.servlets.SlingAllMethodsServlet;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
-import org.apache.sling.api.resource.ValueMap;
 import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.day.cq.commons.jcr.JcrConstants;
-
+import com.adobe.cq.dam.cfm.ContentElement;
+import com.adobe.cq.dam.cfm.ContentFragment;
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;
+import java.util.Iterator;
 
-/**
- * Servlet that writes some sample content into the response. It is mounted for
- * all resources of a specific Sling resource type. The
- * {@link SlingSafeMethodsServlet} shall be used for HTTP methods that are
- * idempotent. For write operations use the {@link SlingAllMethodsServlet}.
- */
-@Component(service = Servlet.class, property = { Constants.SERVICE_DESCRIPTION + "=Simple Demo Servlet",
-		"sling.servlet.methods=" + HttpConstants.METHOD_GET,
-		"sling.servlet.resourceTypes=" + "aemfeb/components/structure/page", "sling.servlet.extensions=" + "txt" })
-public class SimpleServlet extends SlingSafeMethodsServlet {
+@Component(service = Servlet.class, property = { Constants.SERVICE_DESCRIPTION + "=CF Servlet",
+		"sling.servlet.methods=" + HttpConstants.METHOD_GET, "sling.servlet.paths=" + "/bin/cfservlet" })
 
-	/**
-	 * 
-	 */
-	private static final Logger log = LoggerFactory.getLogger(SimpleServlet.class);
-	
-	
+public class CfServlet extends SlingSafeMethodsServlet {
+
+	private static final Logger log = LoggerFactory.getLogger(CfServlet.class);
+
 	private static final long serialVersionUID = 1L;
 
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
-		log.info("simple servlet");
+		ResourceResolver rr = req.getResourceResolver();
+
+		ContentFragment cf = rr.getResource("/content/dam/aemfeb/content-fragments/en/movie-fragment")
+				.adaptTo(ContentFragment.class);
+
+		log.info("inside servlet");
+
+		String contentFragmentName = cf.getName();
 		
-		final Resource resource = req.getResource();
-		resp.setContentType("text/plain");
-		resp.getWriter().write("Title = " + resource.adaptTo(ValueMap.class).get(JcrConstants.JCR_TITLE));
+		log.info("Content Fragment name "+contentFragmentName);
+		Iterator<ContentElement> contentElement = cf.getElements();
+
+		
+		while (contentElement.hasNext()) {
+
+			ContentElement contentElementObj = contentElement.next();
+			
+
+
+			String tagElement = contentElementObj.getName().toString();
+			
+
+			log.info("Field Name  "+tagElement);
+
+			String elementContent = contentElementObj.getContent();
+			
+			log.info("Value  "+elementContent);
+			
+			resp.getWriter().println(tagElement + "----"+elementContent);
+		}
+
 	}
 }

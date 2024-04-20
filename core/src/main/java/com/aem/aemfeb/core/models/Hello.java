@@ -8,7 +8,8 @@ import org.apache.sling.models.annotations.Model;
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class},
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class Hello {
-    
+	
+ 
 public String getMessage(){
 
     return "Hello Rajashekar";
