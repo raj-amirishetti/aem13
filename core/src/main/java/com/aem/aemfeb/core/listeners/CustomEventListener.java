@@ -89,8 +89,6 @@ public class CustomEventListener implements EventListener {
 					Event.PROPERTY_ADDED | Event.NODE_ADDED, "/content/firstpage/jcr:content", true, null, null, false);
 			
 			
-			
-			
 		} catch (Exception e) {
 			
 			log.error(e.getMessage(), e);
