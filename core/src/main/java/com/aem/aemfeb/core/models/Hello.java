@@ -12,7 +12,7 @@ public class Hello {
  
 public String getMessage(){
 
-    return "Hello Rajashekar";
+    return "Hello Ramana";
 }
 
 }
