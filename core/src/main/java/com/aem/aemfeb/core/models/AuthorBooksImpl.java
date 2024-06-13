@@ -29,7 +29,7 @@ public class AuthorBooksImpl {
 	Resource componentResource;
 
 	@ValueMapValue
-	@Default(values = "AEM")
+	@Default(values = "AEM LEARNING")
 	private String authorname;
 
 	@ValueMapValue
