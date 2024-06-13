@@ -33,11 +33,8 @@ public class Xyz {
 	@Named("currentPage")
 	Page page;
 
-	
-	
-
 	public String getDeepak() {
-		return fname;
+		return fname + " Hey ";
 	}
 
 	public String getLname() {
