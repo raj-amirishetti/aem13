@@ -46,6 +46,6 @@ public class HelloWorldModel {
     }
 
     public String getMessage() {
-        return message;
+        return message + "created a branch and pushing into origin";
     }
 }
