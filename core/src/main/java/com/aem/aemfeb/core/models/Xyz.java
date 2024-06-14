@@ -34,7 +34,7 @@ public class Xyz {
 	Page page;
 
 	public String getDeepak() {
-		return fname + " Hey ";
+		return fname + " Hey Wassup ";
 	}
 
 	public String getLname() {
