@@ -26,7 +26,7 @@ public class GeeksWorkflowProcess implements WorkflowProcess {
 		Log.info("\n ================================================================================= ");
 		try {
 			WorkflowData workflowData = workItem.getWorkflowData();
-			if (workflowData.getPayloadType().equals("JCR_PATH")) {
+			if (workflowData.getPayloadType().equals("JCR_P sATH")) {
 				Session session = workflowSession.adaptTo(Session.class);
 				String path = workflowData.getPayload().toString() + "/jcr:content";
 				Node node = session.getNode(path);

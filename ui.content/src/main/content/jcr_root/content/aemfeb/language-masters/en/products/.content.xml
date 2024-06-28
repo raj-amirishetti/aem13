@@ -4,9 +4,9 @@
     <jcr:content
         cq:lastModified="{Date}2023-05-25T11:45:14.526+05:30"
         cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2022-12-28T21:07:14.838+05:30"
+        cq:lastReplicated="{Date}2024-06-20T14:40:42.979+05:30"
         cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Deactivate"
+        cq:lastReplicationAction="Activate"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"

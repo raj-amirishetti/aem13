@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:lastModified="{Date}2023-05-26T11:39:47.881+05:30"
         cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2022-12-28T21:07:14.838+05:30"
+        cq:lastReplicated="{Date}2024-06-20T14:41:13.425+05:30"
         cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Deactivate"
+        cq:lastReplicationAction="Activate"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
-        jcr:mixinTypes="[]"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Articles"
+        jcr:uuid="60639097-7f28-4c9b-bb37-91fed36d0cd1"
         sling:resourceType="aemfeb/components/structure/page">
         <root
             jcr:lastModified="{Date}2022-05-27T15:22:36.147+05:30"

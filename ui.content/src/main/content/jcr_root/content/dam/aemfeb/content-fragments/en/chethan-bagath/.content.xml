@@ -8,7 +8,7 @@
         cq:name="chethan-bagath"
         cq:parentPath="/content/dam/aemfeb/content-fragments/en"
         cq:versionCreator="admin"
-        jcr:description=""
+        jcr:description="Chetan Bagath Content Fragment"
         jcr:lastModified="{Date}2023-01-08T23:47:13.573+05:30"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent"

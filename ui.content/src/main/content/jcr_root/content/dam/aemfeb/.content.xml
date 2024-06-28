@@ -4,11 +4,14 @@
     jcr:lastModifiedBy="admin"
     jcr:primaryType="sling:OrderedFolder">
     <jcr:content
+        jcr:created="{Date}2023-03-16T11:40:25.029+05:30"
+        jcr:createdBy="admin"
+        jcr:lastModified="{Date}2023-01-08T23:59:42.647+05:30"
+        jcr:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="aemfeb">
         <folderThumbnail/>
     </jcr:content>
     <asset.jpg/>
     <content-fragments/>
-    <rajender.jpg/>
 </jcr:root>

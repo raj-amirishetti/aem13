@@ -146,12 +146,12 @@
                     <mycontentfragment jcr:primaryType="nt:unstructured"/>
                     <design-test jcr:primaryType="nt:unstructured">
                         <policy_1672074788253
-                            jcr:lastModified="{Date}2023-02-20T15:32:45.158+05:30"
+                            jcr:lastModified="{Date}2024-06-18T14:49:12.672+05:30"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             jcr:title="designpolicy2"
                             sling:resourceType="wcm/core/components/policy/policy"
-                            body="Hi deepak"
+                            body="Hi Rajashekar"
                             disableDob="true"
                             disableFname="false"
                             disableGender="false"
@@ -160,7 +160,7 @@
                             disableUrl="true"
                             disableWeight="true">
                             <jcr:content
-                                cq:lastReplicated="{Date}2023-03-12T15:05:22.621+05:30"
+                                cq:lastReplicated="{Date}2024-06-20T11:37:22.862+05:30"
                                 cq:lastReplicatedBy="admin"
                                 cq:lastReplicationAction="Activate"
                                 jcr:mixinTypes="[cq:ReplicationStatus]"

@@ -5,7 +5,7 @@
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
         cq:lastModified="{Date}2023-04-07T16:44:20.978+05:30"
         cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2023-03-16T13:23:29.652+05:30"
+        cq:lastReplicated="{Date}2024-06-20T11:37:22.862+05:30"
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Activate"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"

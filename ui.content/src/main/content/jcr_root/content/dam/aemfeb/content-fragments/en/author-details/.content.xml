@@ -71,7 +71,8 @@
         </data>
         <metadata
             jcr:mixinTypes="[cq:Taggable]"
-            jcr:primaryType="nt:unstructured"/>
+            jcr:primaryType="nt:unstructured"
+            hello="Rajashekar"/>
         <model jcr:primaryType="nt:unstructured">
             <variations jcr:primaryType="nt:unstructured">
                 <author1

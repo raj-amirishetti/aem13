@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2023-04-06T13:51:39.687+05:30"
+        cq:lastModified="{Date}2024-03-31T18:23:32.089+05:30"
         cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2024-06-20T14:41:03.769+05:30"
+        cq:lastReplicated="{Date}2022-12-28T21:07:14.838+05:30"
         cq:lastReplicatedBy="admin"
-        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction="Deactivate"
         cq:template="/conf/aemfeb/settings/wcm/templates/first-editable-template"
-        jcr:isCheckedOut="{Boolean}true"
-        jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Experience"
-        jcr:uuid="6e3a2cd5-2c51-4804-b304-21f00d0c3451"
+        jcr:title="heyyy"
         sling:resourceType="aemfeb/components/structure/page">
         <root
             jcr:lastModified="{Date}2022-05-27T15:22:36.147+05:30"
