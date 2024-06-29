@@ -8,7 +8,7 @@
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Deactivate"
         cq:templateType="/conf/aemfeb/settings/wcm/template-types/test-page"
-        jcr:description="My First Editable Template"
+        jcr:description="My First Editable Template--"
         jcr:primaryType="cq:PageContent"
         jcr:title="First Editable Template"
         status="enabled"/>

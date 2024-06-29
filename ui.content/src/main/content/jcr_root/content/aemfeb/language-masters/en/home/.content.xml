@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2024-06-18T14:57:31.172+05:30"
+        cq:lastModified="{Date}2024-06-28T16:50:44.224+05:30"
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2024-06-20T11:37:22.862+05:30"
         cq:lastReplicatedBy="admin"
@@ -95,6 +95,13 @@
                     sling:resourceType="aemfeb/components/content/mycomponents/semantic-tags"
                     text="&lt;ol>&#xd;&#xa;&lt;li>&lt;em>&lt;strong>Hello&lt;/strong>&lt;/em>&lt;/li>&#xd;&#xa;&lt;li>&lt;em>&lt;strong>hi&amp;nbsp;&lt;/strong>&lt;/em>&lt;/li>&#xd;&#xa;&lt;li>&lt;em>&lt;strong>how&amp;nbsp;&lt;/strong>&lt;/em>&lt;/li>&#xd;&#xa;&lt;li>&lt;em>&lt;strong>are&amp;nbsp;&lt;/strong>&lt;/em>&lt;/li>&#xd;&#xa;&lt;li>&lt;em>&lt;strong>you&lt;/strong>&lt;/em>&lt;/li>&#xd;&#xa;&lt;li>&lt;em>&lt;strong>wassup&lt;/strong>&lt;/em>&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;"
                     textIsRich="true"/>
+                <weather
+                    jcr:created="{Date}2024-06-28T16:50:44.140+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-06-28T16:50:44.140+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemfeb/components/content/mycomponents/weather"/>
             </responsivegrid>
         </root>
     </jcr:content>

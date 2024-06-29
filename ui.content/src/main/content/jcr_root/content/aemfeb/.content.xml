@@ -21,12 +21,9 @@
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"
         redirectTarget="/content/aemfeb/language-masters/en">
-        <image jcr:primaryType="nt:unstructured">
-            <file/>
-        </image>
+        <image jcr:primaryType="nt:unstructured"/>
     </jcr:content>
     <language-masters/>
-    <de/>
     <in/>
     <us/>
     <rep:policy/>

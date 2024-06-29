@@ -3,4 +3,5 @@
     <filter root="/conf/aemfeb"/>
     <filter root="/content/aemfeb"/>
     <filter root="/content/dam/aemfeb"/>
+    <filter root="/content/cq:tags/aemfeb"/>
 </workspaceFilter>

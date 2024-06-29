@@ -52,7 +52,7 @@
                         <_x0031_655658797931
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            emptyText="Enter movie director name"
+                            emptyText="Enter Movie director name"
                             fieldLabel="Director Name"
                             listOrder="1"
                             maxlength="255"
