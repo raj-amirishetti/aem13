@@ -74,7 +74,7 @@ public class WorkflowStatusScheduler implements Runnable {
 
 	@Deactivate
 	protected void deactivate(WorkflowStatusConfiguration configuration) {
-		LOGGER.debug(" removing scheduler: {}", schedulerName);
+		LOGGER.debug(" Removing scheduler: {}", schedulerName);
 		removeScheduler(configuration);
 	}
 
