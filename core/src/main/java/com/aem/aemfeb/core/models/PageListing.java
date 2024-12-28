@@ -26,7 +26,6 @@ public class PageListing {
  * 
  *
  */
-	
 	@ValueMapValue @Default(values = "/content/aemfeb/language-masters/en/articles")
 	private String rootPath;
 	

@@ -11,10 +11,10 @@ import org.apache.sling.models.annotations.Model;
 public class PracticeModel {
 
 	@Inject @Default(values ="Enter your First Name")
-	private String firstName;
+	private String fname;
 	
 	@Inject @Default(values ="Enter your Last Name")
-	private String lastName;
+	private String lname;
 	
 	@Inject @Default(values ="Enter your Email")
 	private String email;
@@ -22,11 +22,11 @@ public class PracticeModel {
 	
 	
 	public String getFirstName() {
-		return firstName;
+		return fname;
 	}
 	
 	public String getLastName() {
-		return lastName;
+		return lname;
 	}
 	
 	public String getEmail() {

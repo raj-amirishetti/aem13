@@ -1,11 +1,8 @@
 package com.aem.aemfeb.core.models;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
@@ -15,7 +12,6 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
-
 import com.aem.aemfeb.core.bean.ListPageDetail;
 import com.day.cq.wcm.api.Page;
 
@@ -28,9 +24,7 @@ public class Practice {
 	@SlingObject
 	private ResourceResolver rr;
 	
-	
-
-    List<ListPageDetail> list = new ArrayList<>();
+	List<ListPageDetail> list = new ArrayList<>();
 	
 	@PostConstruct
 	public void init() {
